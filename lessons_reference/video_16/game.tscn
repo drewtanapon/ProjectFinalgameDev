@@ -1,12 +1,15 @@
-[gd_scene load_steps=18 format=4 uid="uid://bpqvmc7qt8xut"]
+[gd_scene load_steps=21 format=4 uid="uid://bpqvmc7qt8xut"]
 
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="1_fqdcw"]
 [ext_resource type="Script" uid="uid://bl4rvfo6g3wbf" path="res://lessons_reference/video_16/game.gd" id="1_xym6k"]
+[ext_resource type="PackedScene" uid="uid://b5xgdttaspmk" path="res://lessons_reference/video_16/mob/mob1.tscn" id="4_i6xss"]
 [ext_resource type="Material" uid="uid://spdpie6nlr1q" path="res://lessons_reference/video_16/level/bridges.tres" id="4_mc4jw"]
 [ext_resource type="PackedScene" uid="uid://xtl5acmpaa04" path="res://lessons_reference/video_16/mob/spawner_3d.tscn" id="5_7vlo8"]
-[ext_resource type="PackedScene" uid="uid://dfwbq2vombjvr" path="res://lessons_reference/video_16/mob/mob.tscn" id="5_787o4"]
+[ext_resource type="PackedScene" uid="uid://sojqv4ln1b2n" path="res://lessons_reference/video_16/mob/mob2.tscn" id="5_gh1du"]
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="5_l41we"]
+[ext_resource type="PackedScene" uid="uid://ba7dura8xu80v" path="res://lessons_reference/video_16/mob/mob3.tscn" id="6_gh1du"]
 [ext_resource type="PackedScene" uid="uid://egfc0tojdn14" path="res://addons/Rock01.fbx" id="7_i6xss"]
+[ext_resource type="PackedScene" uid="uid://ex12fioxf333" path="res://lessons_reference/video_16/mob/mob4.tscn" id="7_knn5h"]
 [ext_resource type="PackedScene" uid="uid://sdqh7byd2fpb" path="res://addons/Grass01.fbx" id="8_gh1du"]
 [ext_resource type="PackedScene" uid="uid://8nnrd67y0lfo" path="res://addons/Flowers01.fbx" id="9_knn5h"]
 [ext_resource type="PackedScene" uid="uid://cqqi0y2hkjtvk" path="res://addons/Flower01.fbx" id="10_xv5p5"]
@@ -86,15 +89,19 @@ shape = SubResource("WorldBoundaryShape3D_xiq5r")
 
 [node name="MobSpawner3D" parent="." instance=ExtResource("5_7vlo8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.12224, 0.5, 11.3959)
-mob_to_spawn = ExtResource("5_787o4")
+mob_to_spawn = ExtResource("4_i6xss")
 
 [node name="MobSpawner3D2" parent="." instance=ExtResource("5_7vlo8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.7262, 0.5, 11.9995)
-mob_to_spawn = ExtResource("5_787o4")
+mob_to_spawn = ExtResource("5_gh1du")
 
 [node name="MobSpawner3D3" parent="." instance=ExtResource("5_7vlo8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.7262, 0.5, -7.19963)
-mob_to_spawn = ExtResource("5_787o4")
+mob_to_spawn = ExtResource("6_gh1du")
+
+[node name="MobSpawner3D4" parent="." instance=ExtResource("5_7vlo8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0080862, 0.5, 6.1883135)
+mob_to_spawn = ExtResource("7_knn5h")
 
 [node name="Bridge" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, -6.5)
@@ -281,3 +288,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6475, 0.666785, 20.8891)
 [connection signal="mob_spawned" from="MobSpawner3D" to="." method="_on_mob_spawner_3d_mob_spawned"]
 [connection signal="mob_spawned" from="MobSpawner3D2" to="." method="_on_mob_spawner_3d_mob_spawned"]
 [connection signal="mob_spawned" from="MobSpawner3D3" to="." method="_on_mob_spawner_3d_mob_spawned"]
+[connection signal="mob_spawned" from="MobSpawner3D4" to="." method="_on_mob_spawner_3d_mob_spawned"]
