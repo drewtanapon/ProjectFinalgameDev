@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://da8nk0nyjgi02"
-path="res://.godot/imported/Tree01.fbx-8424dd75a53b25b226876c9083e92934.scn"
+uid="uid://beejd2h0eaore"
+path="res://.godot/imported/Pillar_1.fbx-1dd1ab2daa06d09f7ed9248d81445b2d.scn"
 
 [deps]
 
-source_file="res://addons/Tree01.fbx"
-dest_files=["res://.godot/imported/Tree01.fbx-8424dd75a53b25b226876c9083e92934.scn"]
+source_file="res://assets/Assetsฉากต่างๆ/scene/Pillar_1.fbx"
+dest_files=["res://.godot/imported/Pillar_1.fbx-1dd1ab2daa06d09f7ed9248d81445b2d.scn"]
 
 [params]
 
