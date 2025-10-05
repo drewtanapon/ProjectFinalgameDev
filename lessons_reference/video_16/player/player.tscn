@@ -27,7 +27,7 @@ transform = Transform3D(-0.999926, 0, 0.0121821, 0, 1, 0, -0.0121821, 0, -0.9999
 
 [node name="Marker3D" type="Marker3D" parent="Camera3D"]
 unique_name_in_owner = true
-transform = Transform3D(0.42952, 0, 0, 0, 0.42952, 0, 0, 0, 0.42952, 0.222319, -0.18696, -0.897179)
+transform = Transform3D(0.42952, 0, 0, 0, 0.42952, 0, 0, 0, 0.42952, 0.222319, -0.188977, -0.867053)
 gizmo_extents = 0.37
 
 [node name="Timer" type="Timer" parent="."]
@@ -44,18 +44,20 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -31.0
-offset_top = -31.0
-offset_right = 31.0
-offset_bottom = 31.0
+offset_left = -20.0
+offset_top = -1.0
+offset_right = 42.0
+offset_bottom = 61.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_r7as2")
 expand_mode = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("4_0d82q")
+volume_db = -0.125
 max_polyphony = 4
 
 [node name="character-g2" parent="." instance=ExtResource("5_y8jjm")]
