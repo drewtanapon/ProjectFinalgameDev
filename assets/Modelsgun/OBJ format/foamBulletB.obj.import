@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c5jskmj1rtfqy"
+path="res://.godot/imported/foamBulletB.obj-42be8f72544cbcf1f5ac5641af1030db.mesh"
+
+[deps]
+
+files=["res://.godot/imported/foamBulletB.obj-42be8f72544cbcf1f5ac5641af1030db.mesh"]
+
+source_file="res://assets/Modelsgun/OBJ format/foamBulletB.obj"
+dest_files=["res://.godot/imported/foamBulletB.obj-42be8f72544cbcf1f5ac5641af1030db.mesh", "res://.godot/imported/foamBulletB.obj-42be8f72544cbcf1f5ac5641af1030db.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

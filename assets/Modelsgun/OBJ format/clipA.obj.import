@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cj7swoaqqm1va"
+path="res://.godot/imported/clipA.obj-138d28ef96e1ec665359a35216302e21.mesh"
+
+[deps]
+
+files=["res://.godot/imported/clipA.obj-138d28ef96e1ec665359a35216302e21.mesh"]
+
+source_file="res://assets/Modelsgun/OBJ format/clipA.obj"
+dest_files=["res://.godot/imported/clipA.obj-138d28ef96e1ec665359a35216302e21.mesh", "res://.godot/imported/clipA.obj-138d28ef96e1ec665359a35216302e21.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
