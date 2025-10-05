@@ -23,6 +23,7 @@ func _physics_process(delta):
 	var input_direction_2D = Input.get_vector(
 		"move_left", "move_right", "move_forward", "move_back"
 	)
+	
 	var input_direction_3D = Vector3(
 		input_direction_2D.x, 0, input_direction_2D.y
 	)
@@ -39,6 +40,15 @@ func _physics_process(delta):
 
 	move_and_slide()
 
+	# 🔥 ส่วนควบคุมแอนิเมชัน
+	if direction.length() > 0.1 and is_on_floor():
+		if $"character-g2/AnimationPlayer".current_animation != "walk":
+			$"character-g2/AnimationPlayer".play("walk")
+	else:
+		if $"character-g2/AnimationPlayer".current_animation != "idle":
+			$"character-g2/AnimationPlayer".play("RESET")
+
+	# 🔫 ยิงกระสุน
 	if Input.is_action_pressed("shoot") and %Timer.is_stopped():
 		shoot_bullet()
 

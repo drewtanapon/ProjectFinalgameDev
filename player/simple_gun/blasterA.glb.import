@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d3aya5bqt7jwr"
-path="res://.godot/imported/Skeleton_Arrow.gltf-73795933be98e7e129ddd00f8a5e15be.scn"
+uid="uid://be3hwyab6vnpd"
+path="res://.godot/imported/blasterA.glb-80edf1420b9364b48a6ed229d8bebaba.scn"
 
 [deps]
 
-source_file="res://assets/gltf/Skeleton_Arrow.gltf"
-dest_files=["res://.godot/imported/Skeleton_Arrow.gltf-73795933be98e7e129ddd00f8a5e15be.scn"]
+source_file="res://player/simple_gun/blasterA.glb"
+dest_files=["res://.godot/imported/blasterA.glb-80edf1420b9364b48a6ed229d8bebaba.scn"]
 
 [params]
 

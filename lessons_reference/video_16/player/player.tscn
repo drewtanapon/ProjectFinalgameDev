@@ -1,13 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://d3kp34dihjeyd"]
+[gd_scene load_steps=7 format=3 uid="uid://d3kp34dihjeyd"]
 
 [ext_resource type="Script" uid="uid://8vhepp8ap6hu" path="res://lessons_reference/video_16/player/player.gd" id="1_g3eiy"]
-[ext_resource type="PackedScene" uid="uid://b6nrg32r2wq86" path="res://lessons_reference/video_16/player/simple_gun/blue_gun.tscn" id="3_43sda"]
+[ext_resource type="PackedScene" uid="uid://coqxprknx83li" path="res://assets/Modelsgun/GLTF format/blasterD.glb" id="2_y8jjm"]
 [ext_resource type="Texture2D" uid="uid://courndspfmq8n" path="res://player/reticle.png" id="3_r7as2"]
 [ext_resource type="AudioStream" uid="uid://b60djage857j5" path="res://player/gun_shoot.wav" id="4_0d82q"]
+[ext_resource type="PackedScene" uid="uid://d22ak8a25gwfi" path="res://scene/player.tscn" id="5_y8jjm"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ctapl"]
-radius = 0.338193
-height = 1.5
+radius = 0.397298
+height = 1.41322
 
 [node name="Player" type="CharacterBody3D"]
 collision_layer = 2
@@ -19,15 +20,14 @@ shape = SubResource("CapsuleShape3D_ctapl")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.08523, 0)
 
-[node name="gun_model" parent="Camera3D" instance=ExtResource("3_43sda")]
-unique_name_in_owner = true
-transform = Transform3D(-0.300089, -0.0103925, 0.0153999, -0.0081543, 0.297613, 0.0419422, -0.0166934, 0.0414445, -0.297326, 0.362667, -0.130673, -0.446608)
+[node name="blasterD2" parent="Camera3D" instance=ExtResource("2_y8jjm")]
+transform = Transform3D(-0.999926, 0, 0.0121821, 0, 1, 0, -0.0121821, 0, -0.999926, 0.0743057, -0.232858, -0.592559)
 
 [node name="Marker3D" type="Marker3D" parent="Camera3D"]
 unique_name_in_owner = true
-transform = Transform3D(0.42952, 0, 0, 0, 0.42952, 0, 0, 0, 0.42952, 0.364214, -0.0933893, -0.624222)
+transform = Transform3D(0.42952, 0, 0, 0, 0.42952, 0, 0, 0, 0.42952, 0.222319, -0.18696, -0.897179)
 gizmo_extents = 0.37
 
 [node name="Timer" type="Timer" parent="."]
@@ -57,3 +57,6 @@ expand_mode = 1
 unique_name_in_owner = true
 stream = ExtResource("4_0d82q")
 max_polyphony = 4
+
+[node name="character-g2" parent="." instance=ExtResource("5_y8jjm")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 0, 0, 0.125763)

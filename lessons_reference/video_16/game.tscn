@@ -88,10 +88,6 @@ shape = SubResource("WorldBoundaryShape3D_xiq5r")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.12224, 0.5, 11.3959)
 mob_to_spawn = ExtResource("5_787o4")
 
-[node name="MobSpawner3D2" parent="." instance=ExtResource("5_7vlo8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.7262, 0.5, 11.9995)
-mob_to_spawn = ExtResource("5_787o4")
-
 [node name="MobSpawner3D3" parent="." instance=ExtResource("5_7vlo8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.7262, 0.5, -7.19963)
 mob_to_spawn = ExtResource("5_787o4")
@@ -279,5 +275,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6475, 0.666785, 20.8891)
 
 [connection signal="body_entered" from="KillPlane" to="." method="_on_kill_plane_body_entered"]
 [connection signal="mob_spawned" from="MobSpawner3D" to="." method="_on_mob_spawner_3d_mob_spawned"]
-[connection signal="mob_spawned" from="MobSpawner3D2" to="." method="_on_mob_spawner_3d_mob_spawned"]
 [connection signal="mob_spawned" from="MobSpawner3D3" to="." method="_on_mob_spawner_3d_mob_spawned"]

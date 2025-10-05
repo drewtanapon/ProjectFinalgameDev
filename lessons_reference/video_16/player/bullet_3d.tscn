@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://wawlsqcberu6"]
 
 [ext_resource type="Script" uid="uid://wniyqyk2io5j" path="res://lessons_reference/video_16/player/bullet_3d.gd" id="1_gxepa"]
-[ext_resource type="PackedScene" uid="uid://caxbqhwe5nxb3" path="res://lessons_reference/video_16/player/projectile/projectile.tscn" id="2_pfejm"]
+[ext_resource type="PackedScene" uid="uid://di8t1vhn6pn2n" path="res://assets/Modelsgun/GLTF format/foamBulletB.glb" id="2_bi8hw"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_4mnn0"]
 radius = 0.1
@@ -14,7 +14,7 @@ script = ExtResource("1_gxepa")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_4mnn0")
 
-[node name="Projectile" parent="." instance=ExtResource("2_pfejm")]
-transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, 0, 0, 0)
+[node name="foamBulletB2" parent="." instance=ExtResource("2_bi8hw")]
+transform = Transform3D(-3, -4.52987e-07, 1.98007e-14, 0, -1.31134e-07, -3, 4.52987e-07, -3, 1.31134e-07, -0.447017, -0.448845, 0.0126078)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
