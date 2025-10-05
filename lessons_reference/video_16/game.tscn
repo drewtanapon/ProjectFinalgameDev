@@ -164,14 +164,6 @@ use_collision = true
 size = Vector3(7, 15.9572, 12)
 material = ExtResource("5_l41we")
 
-[node name="Label2" type="Label" parent="."]
-offset_left = 26.0
-offset_top = 112.0
-offset_right = 582.0
-offset_bottom = 215.0
-theme_override_font_sizes/font_size = 40
-text = "653380191-9 Jeerawan Singkin"
-
 [node name="Rock01" parent="." instance=ExtResource("7_i6xss")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.77441, 0.44551, 18.1894)
 
