@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://xtl5acmpaa04"]
 
 [ext_resource type="Script" uid="uid://bpgxeyw3xlpvn" path="res://lessons_reference/video_16/mob/spawner_3d.gd" id="1_5kn8d"]
-[ext_resource type="PackedScene" uid="uid://c2oal6rrmeo67" path="res://lessons_reference/video_16/mob/spawner/spawner_skin.tscn" id="2_vlo78"]
+[ext_resource type="PackedScene" uid="uid://dtfs6m7lyejc5" path="res://lessons_reference/video_16/mob/spawner/grave_b_2.tscn" id="2_75aid"]
 
 [node name="MobSpawner3D" type="Node3D"]
 script = ExtResource("1_5kn8d")
@@ -15,7 +15,7 @@ autostart = true
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
-[node name="Spawner" parent="." instance=ExtResource("2_vlo78")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+[node name="grave_B2" parent="." instance=ExtResource("2_75aid")]
+transform = Transform3D(0.012775507, 0, -0.9999184, 0, 1, 0, 0.9999184, 0, 0.012775507, 0, 0, 0)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

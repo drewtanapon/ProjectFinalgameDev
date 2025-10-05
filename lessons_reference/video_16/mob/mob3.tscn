@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://ba7dura8xu80v"]
+
+[ext_resource type="Script" uid="uid://cgfb7bcct3rub" path="res://lessons_reference/video_16/mob/mob_3.gd" id="1_lorai"]
+[ext_resource type="PackedScene" uid="uid://da84bif7066qe" path="res://lessons_reference/video_16/mob/skeleton/skeleton_rogue.tscn" id="2_8c1ft"]
+[ext_resource type="Script" uid="uid://brqowopw12vmt" path="res://lessons_reference/video_16/mob/skeleton/skeleton_rogue.gd" id="3_o6gd1"]
+[ext_resource type="AudioStream" uid="uid://bec5opkuf77c7" path="res://mob/mob_take_damage.wav" id="4_u2qxs"]
+[ext_resource type="AudioStream" uid="uid://ha0bp3cygkq1" path="res://mob/mob_ko.wav" id="5_xwnx1"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_k6dj5"]
+height = 1.5
+
+[node name="Mob" type="RigidBody3D"]
+top_level = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+gravity_scale = 0.0
+script = ExtResource("1_lorai")
+
+[node name="Skeleton_Rogue" parent="." instance=ExtResource("2_8c1ft")]
+unique_name_in_owner = true
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+script = ExtResource("3_o6gd1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.39663184, 0)
+shape = SubResource("CapsuleShape3D_k6dj5")
+
+[node name="Timer" type="Timer" parent="."]
+unique_name_in_owner = true
+one_shot = true
+
+[node name="HurtSound" type="AudioStreamPlayer3D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("4_u2qxs")
+max_db = -10.0
+max_polyphony = 4
+
+[node name="KOSound" type="AudioStreamPlayer3D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_xwnx1")
+max_db = -10.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
