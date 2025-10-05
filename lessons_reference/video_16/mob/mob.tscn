@@ -5,7 +5,8 @@
 [ext_resource type="AudioStream" uid="uid://bec5opkuf77c7" path="res://mob/mob_take_damage.wav" id="3_sikhy"]
 [ext_resource type="AudioStream" uid="uid://ha0bp3cygkq1" path="res://mob/mob_ko.wav" id="4_qnk8k"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_gkbwe"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_3exxy"]
+radius = 0.404727
 
 [node name="Mob" type="RigidBody3D"]
 top_level = true
@@ -14,9 +15,6 @@ script = ExtResource("1_ebh3x")
 
 [node name="bat_model" parent="." instance=ExtResource("2_5vr7j")]
 unique_name_in_owner = true
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("SphereShape3D_gkbwe")
 
 [node name="Timer" type="Timer" parent="."]
 unique_name_in_owner = true
@@ -33,4 +31,8 @@ unique_name_in_owner = true
 stream = ExtResource("4_qnk8k")
 max_db = -10.0
 
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_3exxy")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
