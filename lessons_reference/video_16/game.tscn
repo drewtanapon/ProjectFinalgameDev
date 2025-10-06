@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=4 uid="uid://bl2wbem3fwmr8"]
+[gd_scene load_steps=58 format=4 uid="uid://bl2wbem3fwmr8"]
 
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="1_fqdcw"]
 [ext_resource type="Script" uid="uid://bl4rvfo6g3wbf" path="res://lessons_reference/video_16/game.gd" id="1_xym6k"]
@@ -44,23 +44,24 @@
 [ext_resource type="PackedScene" uid="uid://bv2cd8hiubg7j" path="res://assets/Assetsฉากต่างๆ/gltf/shrine.gltf" id="41_vh1sv"]
 [ext_resource type="PackedScene" uid="uid://b80qe2fkyh5ig" path="res://assets/Assetsฉากต่างๆ/gltf/lantern_hanging.gltf" id="42_f1n1w"]
 [ext_resource type="PackedScene" uid="uid://bcor1gdak210e" path="res://assets/Assetsฉากต่างๆ/gltf/ribcage.gltf" id="43_ta1wo"]
+[ext_resource type="PackedScene" uid="uid://clyj0kwfth08e" path="res://first_aid_kit.tscn" id="44_ta1wo"]
 [ext_resource type="PackedScene" uid="uid://ba7dura8xu80v" path="res://lessons_reference/video_16/mob/mob3.tscn" id="45_13qqb"]
 
 [sub_resource type="Environment" id="Environment_pev5d"]
 background_mode = 1
-background_color = Color(1.05888e-06, 0.378969, 0.475615, 1)
+background_color = Color(4.76494e-06, 0.466208, 0.582282, 1)
 ambient_light_source = 2
-ambient_light_color = Color(0.560003, 0.455413, 0.303927, 1)
+ambient_light_color = Color(0.418701, 0.320865, 0.193576, 1)
 ambient_light_sky_contribution = 0.31
-tonemap_mode = 2
+tonemap_mode = 4
 tonemap_exposure = 1.05
 tonemap_white = 0.95
 ssao_intensity = 1.0
 glow_normalized = true
 glow_intensity = 0.2
 fog_enabled = true
-fog_light_color = Color(0.367375, 0.271268, 0.276376, 1)
-fog_density = 0.002
+fog_light_color = Color(0.804149, 0.700222, 0.704388, 1)
+fog_light_energy = 5.0
 fog_height = 0.52
 fog_height_density = 0.1319
 volumetric_fog_density = 0.1525
@@ -112,9 +113,13 @@ script = ExtResource("1_xym6k")
 environment = SubResource("Environment_pev5d")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.707107, -0.612373, 0.353553, 0, 0.5, 0.866026, -0.707107, -0.612373, 0.353553, 0.510616, 8.84134, 0.100216)
+transform = Transform3D(0.707107, -0.612373, 0.353553, 0, 0.5, 0.866026, -0.707107, -0.612373, 0.353553, -0.101629, 64.8718, -0.382436)
+light_color = Color(0.724643, 0.724643, 0.724643, 1)
 shadow_enabled = true
+shadow_normal_bias = 0.0
+directional_shadow_mode = 1
 directional_shadow_max_distance = 40.0
+sky_mode = 1
 
 [node name="Player" parent="." instance=ExtResource("1_fqdcw")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7, 0.507239, -7.5)
@@ -695,6 +700,9 @@ shape = SubResource("BoxShape3D_2b8ir")
 
 [node name="ribcage2" parent="StaticBody3D6/CollisionShape3D" instance=ExtResource("43_ta1wo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.625077, -0.738654, 1.24808)
+
+[node name="FirstAidKit" parent="." instance=ExtResource("44_ta1wo")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 8.37607, 1.38499, -7.05718)
 
 [node name="MobSpawner3D2" parent="." instance=ExtResource("5_7vlo8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0786, 0.448688, 6.1912)

@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://brwl35bnrvf07"
+=======
+uid="uid://octbgx1ccb7i"
+>>>>>>> dd8705d (Merge branch 'Kittiphong')
 path.s3tc="res://.godot/imported/skeleton_texture.png-fc6c726f9d36a49e300d0bf2d1306583.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
