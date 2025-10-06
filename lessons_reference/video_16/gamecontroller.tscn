@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk74yvi81oc8x"]
+
+[ext_resource type="Script" uid="uid://ddalkfig1m28j" path="res://gamecontroller.gd" id="1_t1r2b"]
+
+[node name="Game" type="Node"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_left = 79.0
+offset_top = 79.0
+offset_right = 307.0
+offset_bottom = 165.0
+theme_override_font_sizes/font_size = 60
+text = "Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Gamecontroller" type="Node" parent="." node_paths=PackedStringArray("label", "scene_holder")]
+script = ExtResource("1_t1r2b")
+label = NodePath("../CanvasLayer/Label")
+scene_holder = NodePath("../SceneHolder")
+
+[node name="SceneHolder" type="Node" parent="."]

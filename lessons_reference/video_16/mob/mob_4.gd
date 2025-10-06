@@ -8,7 +8,7 @@ var health = 3
 @onready var Warrior_model = %Skeleton_Warrior
 @onready var timer = %Timer
 
-@onready var player = get_node("/root/Game/Player")
+@onready var player = get_tree().get_first_node_in_group("player")
 
 @onready var hurt_sound = %HurtSound
 @onready var ko_sound = %KOSound
