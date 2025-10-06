@@ -1,6 +1,6 @@
 [gd_scene load_steps=33 format=3 uid="uid://dyf717ji4312e"]
 
-[ext_resource type="Script" path="res://scene/scene_1.gd" id="1_u14kr"]
+[ext_resource type="Script" uid="uid://b0a70slf2ng1l" path="res://scene/scene_1.gd" id="1_u14kr"]
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="1_wlubc"]
 [ext_resource type="PackedScene" uid="uid://chhtqajy8pui" path="res://assets/Assetsฉากต่างๆ/gltf/fence.gltf" id="2_icvjd"]
 [ext_resource type="PackedScene" uid="uid://8pwro6nr1tkl" path="res://assets/Assetsฉากต่างๆ/gltf/crypt.gltf" id="3_n2bin"]
@@ -445,3 +445,5 @@ transform = Transform3D(0.0343936, 0, -0.999408, 0, 1, 0, 0.999408, 0, 0.0343936
 mob_to_spawn = ExtResource("26_gipnd")
 
 [connection signal="mob_spawned" from="StaticBody3D/MobSpawner3D" to="." method="_on_mob_spawner_3d_mob_spawned"]
+[connection signal="mob_spawned" from="MobSpawner3D" to="." method="_on_mob_spawner_3d_mob_spawned"]
+[connection signal="mob_spawned" from="MobSpawner3D2" to="." method="_on_mob_spawner_3d_mob_spawned"]

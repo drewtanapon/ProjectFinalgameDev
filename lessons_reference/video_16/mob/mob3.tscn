@@ -3,11 +3,12 @@
 [ext_resource type="Script" uid="uid://cgfb7bcct3rub" path="res://lessons_reference/video_16/mob/mob_3.gd" id="1_lorai"]
 [ext_resource type="PackedScene" uid="uid://da84bif7066qe" path="res://lessons_reference/video_16/mob/skeleton/skeleton_rogue.tscn" id="2_8c1ft"]
 [ext_resource type="Script" uid="uid://brqowopw12vmt" path="res://lessons_reference/video_16/mob/skeleton/skeleton_rogue.gd" id="3_o6gd1"]
-[ext_resource type="AudioStream" uid="uid://bec5opkuf77c7" path="res://mob/mob_take_damage.wav" id="4_u2qxs"]
-[ext_resource type="AudioStream" uid="uid://ha0bp3cygkq1" path="res://mob/mob_ko.wav" id="5_xwnx1"]
+[ext_resource type="AudioStream" uid="uid://cpc7jmbuyqjib" path="res://Sound/monster-5die.wav" id="4_lorai"]
+[ext_resource type="AudioStream" uid="uid://d138aoiw77kby" path="res://Sound/monster-8.wav" id="5_lorai"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_k6dj5"]
-height = 1.5
+radius = 0.681858
+height = 2.82328
 
 [node name="Mob" type="RigidBody3D"]
 top_level = true
@@ -32,13 +33,13 @@ one_shot = true
 
 [node name="HurtSound" type="AudioStreamPlayer3D" parent="."]
 unique_name_in_owner = true
-stream = ExtResource("4_u2qxs")
+stream = ExtResource("4_lorai")
 max_db = -10.0
 max_polyphony = 4
 
 [node name="KOSound" type="AudioStreamPlayer3D" parent="."]
 unique_name_in_owner = true
-stream = ExtResource("5_xwnx1")
+stream = ExtResource("5_lorai")
 max_db = -10.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

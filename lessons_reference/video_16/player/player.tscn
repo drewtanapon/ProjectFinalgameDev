@@ -4,10 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://coqxprknx83li" path="res://assets/Modelsgun/GLTF format/blasterD.glb" id="2_y8jjm"]
 [ext_resource type="PackedScene" uid="uid://dls18eeij47k4" path="res://lessons_reference/challenges/player_health_bar.tscn" id="3_k5scx"]
 [ext_resource type="Texture2D" uid="uid://courndspfmq8n" path="res://player/reticle.png" id="3_r7as2"]
-[ext_resource type="AudioStream" uid="uid://b60djage857j5" path="res://player/gun_shoot.wav" id="4_0d82q"]
 [ext_resource type="FontFile" uid="uid://cd7pijjjd4hto" path="res://assets/RetroBritish-DemoVersion-Regular.ttf" id="4_ifwga"]
 [ext_resource type="FontFile" uid="uid://r3tmh6trx142" path="res://assets/RetroBritish-DemoVersion-Regular.otf" id="5_oc7id"]
 [ext_resource type="PackedScene" uid="uid://d22ak8a25gwfi" path="res://scene/player.tscn" id="5_y8jjm"]
+[ext_resource type="AudioStream" uid="uid://c2235q1s83eu7" path="res://Sound/lmg_fire01.mp3" id="7_oc7id"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ctapl"]
 radius = 0.397298
@@ -90,8 +90,8 @@ expand_mode = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
-stream = ExtResource("4_0d82q")
-volume_db = -0.125
+stream = ExtResource("7_oc7id")
+volume_db = -15.752
 max_polyphony = 4
 
 [node name="character-g2" parent="." instance=ExtResource("5_y8jjm")]

@@ -149,7 +149,7 @@ func _on_player_dead() -> void:
 
 		# ใช้ Tween ทำให้ค่อยๆ ปรากฏ
 		var tween = create_tween()
-		tween.tween_property(you_die_label, "modulate:a", 1.0, 1.5)  # 1.5 วินาทีค่อยๆ ชัดขึ้น
+		tween.tween_property(you_die_label, "modulate:a", 1.0, 3.5)  # 1.5 วินาทีค่อยๆ ชัดขึ้น
 	else:
 		print("[WARN] Node 'youDie' not found under Camera3D")
 
