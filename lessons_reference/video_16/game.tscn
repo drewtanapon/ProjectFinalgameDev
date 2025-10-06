@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=4 uid="uid://bpqvmc7qt8xut"]
+[gd_scene load_steps=56 format=4 uid="uid://bpqvmc7qt8xut"]
 
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="1_fqdcw"]
 [ext_resource type="Script" uid="uid://bl4rvfo6g3wbf" path="res://lessons_reference/video_16/game.gd" id="1_xym6k"]
@@ -43,6 +43,7 @@
 [ext_resource type="PackedScene" uid="uid://bv2cd8hiubg7j" path="res://assets/Assetsฉากต่างๆ/gltf/shrine.gltf" id="41_vh1sv"]
 [ext_resource type="PackedScene" uid="uid://b80qe2fkyh5ig" path="res://assets/Assetsฉากต่างๆ/gltf/lantern_hanging.gltf" id="42_f1n1w"]
 [ext_resource type="PackedScene" uid="uid://bcor1gdak210e" path="res://assets/Assetsฉากต่างๆ/gltf/ribcage.gltf" id="43_ta1wo"]
+[ext_resource type="PackedScene" uid="uid://clyj0kwfth08e" path="res://first_aid_kit.tscn" id="44_ta1wo"]
 
 [sub_resource type="Environment" id="Environment_pev5d"]
 background_mode = 1
@@ -697,6 +698,9 @@ shape = SubResource("BoxShape3D_2b8ir")
 
 [node name="ribcage2" parent="StaticBody3D6/CollisionShape3D" instance=ExtResource("43_ta1wo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.625077, -0.738654, 1.24808)
+
+[node name="FirstAidKit" parent="." instance=ExtResource("44_ta1wo")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 9.64518, 1.35285, 6.13357)
 
 [connection signal="body_entered" from="KillPlane" to="." method="_on_kill_plane_body_entered"]
 [connection signal="mob_spawned" from="MobSpawner3D" to="." method="_on_mob_spawner_3d_mob_spawned"]

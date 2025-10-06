@@ -143,3 +143,10 @@ func apply_knockback(from_world_pos: Vector3, power: float = knockback_speed, up
 	# ตั้งความเร็วถอยทันที
 	velocity = dir * power + Vector3.UP * up
 	_stun_until = Time.get_ticks_msec() / 1000.0 + knockback_stun
+	
+func heal_to_full() -> void:
+	if is_dead: return
+	health = max_health
+	if has_method("_update_health_ui"):
+		_update_health_ui()
+	print("[PLAYER] ✅ heal_to_full ->", health, "/", max_health)

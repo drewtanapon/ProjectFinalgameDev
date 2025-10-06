@@ -10,7 +10,7 @@ func increase_score():
 	label.text = "Score: " + str(player_score)
 
 
-func _on_kill_plane_body_entered(body):
+func _on_kill_plane_body_entered(body): 
 	get_tree().reload_current_scene.call_deferred()
 
 

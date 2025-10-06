@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3 uid="uid://clyj0kwfth08e"]
+
+[ext_resource type="PackedScene" uid="uid://cpvjy0frsqjay" path="res://addons/FirstAidKit.fbx" id="1_fd7ev"]
+[ext_resource type="Script" uid="uid://bv142kvhig58s" path="res://first_aid_kit.gd" id="2_qj56w"]
+
+[sub_resource type="Animation" id="Animation_uf0w7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FirstAidKit:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_qj56w"]
+resource_name = "Idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FirstAidKit:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.5, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_274vq"]
+_data = {
+&"Idle": SubResource("Animation_qj56w"),
+&"RESET": SubResource("Animation_uf0w7")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_uf0w7"]
+animation = &"Idle"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qj56w"]
+size = Vector3(1.41751, 0.86499, 0.812836)
+
+[node name="FirstAidKit" instance=ExtResource("1_fd7ev")]
+script = ExtResource("2_qj56w")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
+libraries = {
+&"": SubResource("AnimationLibrary_274vq")
+}
+autoplay = "Idle"
+
+[node name="AnimationTree" type="AnimationTree" parent="." index="2"]
+tree_root = SubResource("AnimationNodeAnimation_uf0w7")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="area_body" type="Area3D" parent="." index="3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="area_body" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, 0.16581, -0.0197281)
+shape = SubResource("BoxShape3D_qj56w")
+
+[connection signal="body_entered" from="area_body" to="." method="_on_area_body_entered"]
