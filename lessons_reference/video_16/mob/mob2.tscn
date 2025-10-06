@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://b4broye87p35n"]
+[gd_scene load_steps=6 format=3 uid="uid://3sok8fw7lvlw"]
 
 [ext_resource type="Script" uid="uid://bnyahr1iopal0" path="res://lessons_reference/video_16/mob/mob_2.gd" id="1_52d3y"]
 [ext_resource type="PackedScene" uid="uid://tg0uj7588neo" path="res://lessons_reference/video_16/mob/skeleton/skeleton_minion.tscn" id="2_k6dj5"]

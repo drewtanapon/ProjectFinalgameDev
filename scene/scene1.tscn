@@ -405,7 +405,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1749, 0.360369, 6.847)
 [node name="Player" parent="." instance=ExtResource("22_n2bin")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7, 9.42759, -7.5)
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Player"]
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="Player"]
 stream = ExtResource("26_8k2pk")
 volume_db = -7.027
 autoplay = true

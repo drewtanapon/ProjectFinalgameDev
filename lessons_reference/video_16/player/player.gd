@@ -131,7 +131,8 @@ func _on_player_dead() -> void:
 	is_dead = true
 	set_physics_process(false)
 	set_process(false)
-
+	var death_sound = $%AudioStreamPlayer2
+	death_sound.play()
 	var you_die_label = $Camera3D/youDie
 	if you_die_label:
 		you_die_label.visible = true

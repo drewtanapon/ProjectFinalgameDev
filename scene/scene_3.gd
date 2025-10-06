@@ -8,10 +8,17 @@ var level_cleared: bool = false         # กันเปลี่ยนฉา�
 # ===== UI =====
 @onready var label := $Player/Camera3D/Label
 
+@onready var white_bg := $Player/white_bg
+@onready var congratulations := $Player/congratulations
+@onready var enter := $Player/enter
+
 func _ready() -> void:
 	print("Hello from scene3!")
 	remaining_kills = max(required_kills, 0)
-	_update_kill_ui()
+	_update_kill_ui()	
+	white_bg.visible = false
+	congratulations.visible = false
+	enter.visible = false
 
 # เรียกเมื่อมอน "ตายจริง ๆ"
 func register_kill() -> void:
@@ -42,12 +49,45 @@ func _on_mob_spawner_3d_mob_spawned(mob) -> void:
 	mob.died.connect(func():
 		register_kill()
 		do_poof(mob.global_position)
-	}, Object.CONNECT_ONE_SHOT)
+	, Object.CONNECT_ONE_SHOT)
 
 	# ควันตอนเกิด (ถ้าต้องการ)
 	do_poof(mob.global_position)
 
-func do_poof(mob_position: Vector3) -> void:
+func show_congratulations():
+	var bg = $Player/white_bg
+	var congrats = $Player/congratulations
+	var enter = $Player/enter
+
+	# ทำให้ทุกอย่างมองเห็น
+	bg.visible = true
+	congrats.visible = true
+	enter.visible = true
+
+	# ตั้งค่าเริ่มโปร่งใส
+	bg.modulate.a = 0.0
+	congrats.modulate.a = 0.0
+	enter.modulate.a = 0.0
+
+	# ใช้ Tween ทำให้ค่อยๆ เลือนขึ้น
+	var tween = create_tween()
+	tween.tween_property(bg, "modulate:a", 1.0, 1.5) # พื้นหลังเลือนขึ้น
+	tween.parallel().tween_property(congrats, "modulate:a", 1.0, 2.0).set_delay(0.3)
+	tween.parallel().tween_property(enter, "modulate:a", 1.0, 2.0).set_delay(1.2)
+
+	# (ทางเลือก) รอให้ผู้เล่นกด Enter เพื่อไปต่อ
+	await tween.finished
+	await wait_for_enter()
+
+func wait_for_enter():
+	while true:
+		await get_tree().process_frame
+		if Input.is_action_just_pressed("ui_accept"):
+			# ตัวอย่าง: ไปฉากใหม่ หรือรีโหลด
+			get_tree().change_scene_to_file("res://scene/next_scene.tscn")
+			break
+
+func do_poof(mob_position: Vector3) -> void:	
 	const SMOKE_PUFF = preload("res://mob/smoke_puff/smoke_puff.tscn")
 	var poof := SMOKE_PUFF.instantiate()
 	add_child(poof)

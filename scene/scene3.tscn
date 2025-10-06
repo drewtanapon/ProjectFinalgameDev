@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cpm2r3rc5h6yp" path="res://assets/Assetsฉากต่างๆ/scene/Assembled_Wall_2.fbx" id="4_li1s7"]
 [ext_resource type="AudioStream" uid="uid://dclm3dlbnyhlw" path="res://Sound/2 - The Haunted Castle (no loop).wav" id="5_o878g"]
 [ext_resource type="PackedScene" uid="uid://cld8esxr0n1ua" path="res://assets/Assetsฉากต่างๆ/gltf/fence_gate.gltf" id="5_yvo7k"]
+[ext_resource type="FontFile" uid="uid://r3tmh6trx142" path="res://assets/RetroBritish-DemoVersion-Regular.otf" id="6_5or0q"]
 [ext_resource type="PackedScene" uid="uid://bp6owml2r3vvi" path="res://assets/Assetsฉากต่างๆ/gltf/grave_A_destroyed.gltf" id="6_sgug4"]
 [ext_resource type="PackedScene" uid="uid://dng6l1cw4hato" path="res://assets/Assetsฉากต่างๆ/scene/Tree_3.fbx" id="7_cuxe5"]
 [ext_resource type="PackedScene" uid="uid://dd07qnsqjybkj" path="res://assets/Assetsฉากต่างๆ/scene/Tree_1.fbx" id="8_raapr"]
@@ -43,7 +44,7 @@
 [ext_resource type="PackedScene" uid="uid://b5m1lc1u7sj3s" path="res://assets/Assetsฉากต่างๆ/gltf/fence_pillar.gltf" id="39_mx1c6"]
 [ext_resource type="PackedScene" uid="uid://clyj0kwfth08e" path="res://first_aid_kit.tscn" id="40_ctexo"]
 [ext_resource type="PackedScene" uid="uid://xtl5acmpaa04" path="res://lessons_reference/video_16/mob/spawner_3d.tscn" id="41_mx1c6"]
-[ext_resource type="PackedScene" uid="uid://sojqv4ln1b2n" path="res://lessons_reference/mob2.tscn" id="42_kv6pi"]
+[ext_resource type="PackedScene" uid="uid://3sok8fw7lvlw" path="res://lessons_reference/video_16/mob/mob2.tscn" id="42_kv6pi"]
 [ext_resource type="PackedScene" uid="uid://b5xgdttaspmk" path="res://lessons_reference/video_16/mob/mob1.tscn" id="42_mm43o"]
 [ext_resource type="PackedScene" uid="uid://ba7dura8xu80v" path="res://lessons_reference/video_16/mob/mob3.tscn" id="44_o878g"]
 [ext_resource type="PackedScene" uid="uid://ex12fioxf333" path="res://lessons_reference/video_16/mob/mob4.tscn" id="45_5or0q"]
@@ -122,10 +123,42 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.163946, 0.466872, 0.524401
 [node name="Player" parent="." instance=ExtResource("3_7yytx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.3569, 3.33991, 40.1413)
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Player"]
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="Player"]
 stream = ExtResource("5_o878g")
 volume_db = -15.459
 autoplay = true
+
+[node name="white_bg" type="ColorRect" parent="Player"]
+visible = false
+offset_right = 1907.0
+offset_bottom = 1080.0
+
+[node name="congratulations" type="Label" parent="Player"]
+offset_left = 98.0
+offset_top = 392.0
+offset_right = 1821.0
+offset_bottom = 665.0
+theme_override_colors/font_color = Color(1, 0.8, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 25
+theme_override_fonts/font = ExtResource("6_5or0q")
+theme_override_font_sizes/font_size = 200
+text = "congratulations"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="enter" type="Label" parent="Player"]
+offset_left = 247.0
+offset_top = 925.0
+offset_right = 1608.0
+offset_bottom = 1028.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_5or0q")
+theme_override_font_sizes/font_size = 40
+text = "Enter spacebar for restart "
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="."]
 
@@ -545,7 +578,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5434, -0.401779, 34.7259)
 transform = Transform3D(0.676593, 0, -0.736357, 0, 1, 0, 0.736357, 0, 0.676593, 40.5013, -0.00642109, 2.45464)
 
 [node name="gravestone2" parent="Node3D/Node3D2" instance=ExtResource("36_ctexo")]
-transform = Transform3D(-0.0181329, 0, -0.999836, 0, 1, 0, 0.999836, 0, -0.0181329, 50.0855, -0.00641918, 6.612)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.163946, 0.466872, 0.524401)
 
 [node name="floor_dirt_small2" parent="Node3D/Node3D2" instance=ExtResource("37_ht72c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.0218, 0.49358, 1.21169)
@@ -600,7 +633,7 @@ transform = Transform3D(-0.999698, 0, -0.0245717, 0, 1, 0, 0.0245717, 0, -0.9996
 mob_to_spawn = ExtResource("45_5or0q")
 
 [node name="KillPlane" type="Area3D" parent="."]
-transform = Transform3D(6.475, 0, 0, 0, 6.475, 0, 0, 0, 6.475, 22.8489, -9.6571, 21.6985)
+transform = Transform3D(6.475, 0, 0, 0, 6.475, 0, 0, 0, 6.475, 22.8489, -4.31544, 21.6985)
 collision_layer = 0
 collision_mask = 2
 monitorable = false

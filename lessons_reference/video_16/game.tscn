@@ -124,7 +124,7 @@ sky_mode = 1
 [node name="Player" parent="." instance=ExtResource("1_fqdcw")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7, 0.507239, -7.5)
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Player"]
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="Player"]
 stream = ExtResource("3_6j8g2")
 volume_db = -17.558
 autoplay = true

@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccuhj745gnl8b"]
+
+[ext_resource type="FontFile" uid="uid://r3tmh6trx142" path="res://assets/RetroBritish-DemoVersion-Regular.otf" id="1_nrk32"]
+[ext_resource type="Script" uid="uid://cr41hqukba16r" path="res://scene/menu_start.gd" id="1_q8ed8"]
+[ext_resource type="Texture2D" uid="uid://dqcp0gnr2hfbw" path="res://scene/messageImage_1759787152482.jpg" id="2_fk6b6"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+size_flags_horizontal = 4
+script = ExtResource("1_q8ed8")
+
+[node name="MessageImage1759787152482" type="Sprite2D" parent="."]
+position = Vector2(959, 535.437)
+scale = Vector2(1.62185, 1.21857)
+texture = ExtResource("2_fk6b6")
+
+[node name="Assests" type="Node3D" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 473.0
+offset_right = 1154.0
+offset_bottom = 635.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.380392, 0.223529, 0.223529, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.111197, 0.111197, 0.111197, 1)
+theme_override_colors/icon_disabled_color = Color(0.133196, 0.133196, 0.133196, 1)
+theme_override_colors/font_outline_color = Color(0.277528, 0.277528, 0.277528, 1)
+theme_override_colors/font_pressed_color = Color(0.998257, 0.97606, 0.982188, 1)
+theme_override_fonts/font = ExtResource("1_nrk32")
+theme_override_font_sizes/font_size = 60
+text = "PLAY"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_nrk32")
+theme_override_font_sizes/font_size = 60
+text = "QUIT"
