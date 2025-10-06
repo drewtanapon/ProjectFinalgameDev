@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://p6r1psljl0nc"
-path.s3tc="res://.godot/imported/halloweenbits_texture.png-8812e153fee019c7167bd2b2d4eb0173.s3tc.ctex"
+uid="uid://44egvvoumof8"
+path.s3tc="res://.godot/imported/skeleton_texture.png-0a8eff95e5e689430abd64e78bf5e887.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/fbx/halloweenbits_texture.png"
-dest_files=["res://.godot/imported/halloweenbits_texture.png-8812e153fee019c7167bd2b2d4eb0173.s3tc.ctex"]
+source_file="res://assets/fbx(unity)/skeleton_texture.png"
+dest_files=["res://.godot/imported/skeleton_texture.png-0a8eff95e5e689430abd64e78bf5e887.s3tc.ctex"]
 
 [params]
 
