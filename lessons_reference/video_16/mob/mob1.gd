@@ -8,7 +8,7 @@ var health = 3
 @onready var Mage_model = %Skeleton_Mage
 @onready var timer = %Timer
 
-@onready var player = get_node("/root/Game/Player")
+@onready var player = get_tree().get_first_node_in_group("player")
 
 @onready var hurt_sound = %HurtSound
 @onready var ko_sound = %KOSound
@@ -20,6 +20,8 @@ var hit_cooldown := 0.5                   # กันหักรัว (วิ�
 var _last_hit_time := -999.0
 
 func _physics_process(delta):
+	if not player:
+		return  # ป้องกัน null error
 	var velocity = linear_velocity
 
 	# ใส่แรงโน้มถ่วง

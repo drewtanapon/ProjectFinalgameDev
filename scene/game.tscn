@@ -1,8 +1,7 @@
-[gd_scene load_steps=57 format=4 uid="uid://bpqvmc7qt8xut"]
+[gd_scene load_steps=55 format=4 uid="uid://bpqvmc7qt8xut"]
 
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="1_fqdcw"]
 [ext_resource type="Script" uid="uid://bl4rvfo6g3wbf" path="res://lessons_reference/video_16/game.gd" id="1_xym6k"]
-[ext_resource type="FontFile" uid="uid://r3tmh6trx142" path="res://assets/RetroBritish-DemoVersion-Regular.otf" id="2_ta1wo"]
 [ext_resource type="Material" uid="uid://spdpie6nlr1q" path="res://lessons_reference/video_16/level/bridges.tres" id="4_mc4jw"]
 [ext_resource type="PackedScene" uid="uid://xtl5acmpaa04" path="res://lessons_reference/video_16/mob/spawner_3d.tscn" id="5_7vlo8"]
 [ext_resource type="PackedScene" uid="uid://sojqv4ln1b2n" path="res://lessons_reference/video_16/mob/mob2.tscn" id="5_gh1du"]
@@ -44,7 +43,6 @@
 [ext_resource type="PackedScene" uid="uid://bv2cd8hiubg7j" path="res://assets/Assetsฉากต่างๆ/gltf/shrine.gltf" id="41_vh1sv"]
 [ext_resource type="PackedScene" uid="uid://b80qe2fkyh5ig" path="res://assets/Assetsฉากต่างๆ/gltf/lantern_hanging.gltf" id="42_f1n1w"]
 [ext_resource type="PackedScene" uid="uid://bcor1gdak210e" path="res://assets/Assetsฉากต่างๆ/gltf/ribcage.gltf" id="43_ta1wo"]
-[ext_resource type="AudioStream" uid="uid://dclm3dlbnyhlw" path="res://Sound/2 - The Haunted Castle (no loop).wav" id="45_6j8g2"]
 
 [sub_resource type="Environment" id="Environment_pev5d"]
 background_mode = 1
@@ -116,25 +114,11 @@ transform = Transform3D(0.707107, -0.612373, 0.353553, 0, 0.5, 0.866026, -0.7071
 shadow_enabled = true
 directional_shadow_max_distance = 40.0
 
-[node name="Label" type="Label" parent="."]
-unique_name_in_owner = true
-offset_left = 28.0
-offset_top = 15.0
-offset_right = 256.0
-offset_bottom = 101.0
-theme_override_fonts/font = ExtResource("2_ta1wo")
-theme_override_font_sizes/font_size = 60
-text = "Score: 0"
-
-[node name="Player" parent="." instance=ExtResource("1_fqdcw")]
+[node name="Player" parent="." groups=["player"] instance=ExtResource("1_fqdcw")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7, 0.507239, -7.5)
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Player"]
-stream = ExtResource("45_6j8g2")
-autoplay = true
-
 [node name="KillPlane" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -2.15, -6.5)
+transform = Transform3D(6.475, 0, 0, 0, 6.475, 0, 0, 0, 6.475, -7, -9.657101, 5.255642)
 collision_layer = 0
 collision_mask = 2
 monitorable = false

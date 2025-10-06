@@ -1,5 +1,6 @@
-[gd_scene load_steps=47 format=3 uid="uid://be75dc467ig1q"]
+[gd_scene load_steps=50 format=3 uid="uid://fwsd58paxvrx"]
 
+[ext_resource type="Script" uid="uid://cagoby2vb81up" path="res://scene/scene_3.gd" id="1_26ho1"]
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="1_g4l4l"]
 [ext_resource type="PackedScene" uid="uid://co81ldtocyhav" path="res://addons/Bridge01.fbx" id="2_li1s7"]
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="3_7yytx"]
@@ -39,7 +40,8 @@
 [ext_resource type="PackedScene" uid="uid://725fia3ngfoe" path="res://assets/Assetsฉากต่างๆ/gltf/floor_dirt_small.gltf" id="37_ht72c"]
 [ext_resource type="PackedScene" uid="uid://d2676j6wvtku2" path="res://assets/Assetsฉากต่างๆ/gltf/coffin_decorated.gltf" id="38_26ho1"]
 [ext_resource type="PackedScene" uid="uid://b5m1lc1u7sj3s" path="res://assets/Assetsฉากต่างๆ/gltf/fence_pillar.gltf" id="39_mx1c6"]
-[ext_resource type="AudioStream" uid="uid://d2a3k1wu0xpuv" path="res://Sound/6 - Impish Dance (no loop).wav" id="40_ctexo"]
+[ext_resource type="PackedScene" uid="uid://xtl5acmpaa04" path="res://lessons_reference/video_16/mob/spawner_3d.tscn" id="41_mx1c6"]
+[ext_resource type="PackedScene" uid="uid://sojqv4ln1b2n" path="res://lessons_reference/video_16/mob/mob2.tscn" id="42_kv6pi"]
 
 [sub_resource type="Environment" id="Environment_7yytx"]
 background_mode = 1
@@ -77,8 +79,11 @@ size = Vector3(19.266, 4.30072, 0.618286)
 [sub_resource type="SphereShape3D" id="SphereShape3D_pcmrr"]
 radius = 3.78671
 
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_26ho1"]
+
 [node name="Scene3" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.0333, 0, -10.2046)
+script = ExtResource("1_26ho1")
 
 [node name="WorldEnvironment2" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_7yytx")
@@ -565,6 +570,33 @@ transform = Transform3D(0.722448, 0, 0.691425, 0, 1, 0, -0.691425, 0, 0.722448, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9159, 1.56073, 41.0642)
 shape = SubResource("SphereShape3D_pcmrr")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("40_ctexo")
-autoplay = true
+[node name="MobSpawner3D" parent="." instance=ExtResource("41_mx1c6")]
+transform = Transform3D(-0.6460041, 0, -0.763334, 0, 1, 0, 0.763334, 0, -0.6460041, 29.317938, -0.23010111, 11.3959)
+mob_to_spawn = ExtResource("42_kv6pi")
+
+[node name="MobSpawner3D2" parent="." instance=ExtResource("41_mx1c6")]
+transform = Transform3D(0.14107397, 0, 0.9899991, 0, 1, 0, -0.9899991, 0, 0.14107397, 44.627937, 0.043086052, 4.8679595)
+mob_to_spawn = ExtResource("42_kv6pi")
+
+[node name="MobSpawner3D3" parent="." instance=ExtResource("41_mx1c6")]
+transform = Transform3D(0.6645655, 0, -0.74723005, 0, 1, 0, 0.74723005, 0, 0.6645655, 47.15393, -0.18701506, 15.506634)
+mob_to_spawn = ExtResource("42_kv6pi")
+
+[node name="MobSpawner3D4" parent="." instance=ExtResource("41_mx1c6")]
+transform = Transform3D(-0.99969816, 0, -0.024571717, 0, 1, 0, 0.024571717, 0, -0.99969816, 20.145626, 0.5368171, 12.342572)
+mob_to_spawn = ExtResource("42_kv6pi")
+
+[node name="KillPlane" type="Area3D" parent="."]
+transform = Transform3D(6.475, 0, 0, 0, 6.475, 0, 0, 0, 6.475, 22.848867, -9.657101, 21.698544)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="KillPlane"]
+shape = SubResource("WorldBoundaryShape3D_26ho1")
+
+[connection signal="mob_spawned" from="MobSpawner3D" to="." method="_on_mob_spawner_3d_mob_spawned"]
+[connection signal="mob_spawned" from="MobSpawner3D2" to="." method="_on_mob_spawner_3d_mob_spawned"]
+[connection signal="mob_spawned" from="MobSpawner3D3" to="." method="_on_mob_spawner_3d_mob_spawned"]
+[connection signal="mob_spawned" from="MobSpawner3D4" to="." method="_on_mob_spawner_3d_mob_spawned"]
+[connection signal="body_entered" from="KillPlane" to="." method="_on_kill_plane_body_entered"]
