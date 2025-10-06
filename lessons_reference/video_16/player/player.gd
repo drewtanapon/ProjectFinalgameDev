@@ -10,11 +10,11 @@ var _stun_until := 0.0
 var health: int = max_health
 var is_dead: bool = false
 
-@export var health_bar_path: NodePath
-@onready var _health_bar := (
-	get_node_or_null(health_bar_path) if health_bar_path != NodePath("")
-	else %HealthBar
-)
+#@export var health_bar_path: NodePath
+#@onready var _health_bar := (
+	#get_node_or_null(health_bar_path) if health_bar_path != NodePath("")
+	#else %HealthBar
+#)
 
 # ตายแล้วให้รีเซ็ตฉากอัตโนมัติ
 @export var auto_reload_on_death: bool = true
@@ -23,7 +23,7 @@ var is_dead: bool = false
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	%Marker3D.rotation_degrees.y += 2.0
-	_update_health_ui()
+	#_update_health_ui()
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -117,16 +117,16 @@ func heal(amount: int) -> void:
 func _set_health(value: int) -> void:
 	var prev := health
 	health = clamp(value, 0, max_health)
-	if health != prev:
-		_update_health_ui()
+	#if health != prev:
+		#_update_health_ui()
 	if health <= 0 and not is_dead:
 		_on_player_dead()
 
-func _update_health_ui() -> void:
-	if _health_bar:
-		# ทั้ง ProgressBar และ TextureProgressBar สืบทอดจาก Range (มี max_value/value)
-		_health_bar.max_value = max_health
-		_health_bar.value = health
+#func _update_health_ui() -> void:
+	#if _health_bar:
+		## ทั้ง ProgressBar และ TextureProgressBar สืบทอดจาก Range (มี max_value/value)
+		#_health_bar.max_value = max_health
+		#_health_bar.value = health
 
 func _on_player_dead() -> void:
 	is_dead = true

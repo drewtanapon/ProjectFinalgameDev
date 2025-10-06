@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://coqxprknx83li" path="res://assets/Modelsgun/GLTF format/blasterD.glb" id="2_y8jjm"]
 [ext_resource type="Texture2D" uid="uid://courndspfmq8n" path="res://player/reticle.png" id="3_r7as2"]
 [ext_resource type="AudioStream" uid="uid://b60djage857j5" path="res://player/gun_shoot.wav" id="4_0d82q"]
-[ext_resource type="PackedScene" uid="uid://d22ak8a25gwfi" path="res://scene/player.tscn" id="5_y8jjm"]
+[ext_resource type="PackedScene" path="res://scene/player.tscn" id="5_y8jjm"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ctapl"]
 radius = 0.397298

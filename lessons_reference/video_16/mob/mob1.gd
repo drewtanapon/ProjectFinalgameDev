@@ -8,13 +8,15 @@ var health = 3
 @onready var bat_model = %Skeleton_Mage
 @onready var timer = %Timer
 
-@onready var player = get_node("/root/Game/Player")
+@onready var player = get_tree().get_first_node_in_group("player")
 
 @onready var hurt_sound = %HurtSound
 @onready var ko_sound = %KOSound
 @export var gravity_strength := 9.8
 
 func _physics_process(delta):
+	if not player:
+		return  # ป้องกัน null error
 	var velocity = linear_velocity
 
 	# ใส่แรงโน้มถ่วง
