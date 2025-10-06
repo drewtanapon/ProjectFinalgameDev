@@ -155,7 +155,7 @@ func _on_player_dead() -> void:
 
 	# แสดงผลพักไว้ก่อนรีโหลด
 	if auto_reload_on_death:
-		await get_tree().create_timer(6.0).timeout
+		await get_tree().create_timer(4.5).timeout
 		get_tree().reload_current_scene()
 		
 	is_dead = true
