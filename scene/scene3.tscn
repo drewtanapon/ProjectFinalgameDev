@@ -1,6 +1,6 @@
 [gd_scene load_steps=54 format=3 uid="uid://be75dc467ig1q"]
 
-[ext_resource type="Script" path="res://scene/scene_3.gd" id="1_26ho1"]
+[ext_resource type="Script" uid="uid://cagoby2vb81up" path="res://scene/scene_3.gd" id="1_26ho1"]
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="1_g4l4l"]
 [ext_resource type="PackedScene" uid="uid://co81ldtocyhav" path="res://addons/Bridge01.fbx" id="2_li1s7"]
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="3_7yytx"]
@@ -42,7 +42,7 @@
 [ext_resource type="PackedScene" uid="uid://d2676j6wvtku2" path="res://assets/Assetsฉากต่างๆ/gltf/coffin_decorated.gltf" id="38_26ho1"]
 [ext_resource type="PackedScene" uid="uid://b5m1lc1u7sj3s" path="res://assets/Assetsฉากต่างๆ/gltf/fence_pillar.gltf" id="39_mx1c6"]
 [ext_resource type="PackedScene" uid="uid://xtl5acmpaa04" path="res://lessons_reference/video_16/mob/spawner_3d.tscn" id="41_mx1c6"]
-[ext_resource type="PackedScene" uid="uid://sojqv4ln1b2n" path="res://lessons_reference/mob2.tscn" id="42_kv6pi"]
+[ext_resource type="PackedScene" uid="uid://cr704c15ycqko" path="res://lessons_reference/video_16/mob/mob2.tscn" id="42_kv6pi"]
 [ext_resource type="PackedScene" uid="uid://b5xgdttaspmk" path="res://lessons_reference/video_16/mob/mob1.tscn" id="42_mm43o"]
 [ext_resource type="PackedScene" uid="uid://ba7dura8xu80v" path="res://lessons_reference/video_16/mob/mob3.tscn" id="44_o878g"]
 [ext_resource type="PackedScene" uid="uid://ex12fioxf333" path="res://lessons_reference/video_16/mob/mob4.tscn" id="45_5or0q"]
@@ -544,7 +544,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5434, -0.401779, 34.7259)
 transform = Transform3D(0.676593, 0, -0.736357, 0, 1, 0, 0.736357, 0, 0.676593, 40.5013, -0.00642109, 2.45464)
 
 [node name="gravestone2" parent="Node3D/Node3D2" instance=ExtResource("36_ctexo")]
-transform = Transform3D(-0.0181329, 0, -0.999836, 0, 1, 0, 0.999836, 0, -0.0181329, 50.0855, -0.00641918, 6.612)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.163946, 0.466872, 0.524401)
 
 [node name="floor_dirt_small2" parent="Node3D/Node3D2" instance=ExtResource("37_ht72c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.0218, 0.49358, 1.21169)
