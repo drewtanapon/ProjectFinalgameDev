@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://ba7dura8xu80v"]
+[gd_scene load_steps=6 format=3 uid="uid://ba7dura8xu80v"]
 
 [ext_resource type="Script" uid="uid://cgfb7bcct3rub" path="res://lessons_reference/video_16/mob/mob_3.gd" id="1_lorai"]
 [ext_resource type="PackedScene" uid="uid://da84bif7066qe" path="res://lessons_reference/video_16/mob/skeleton/skeleton_rogue.tscn" id="2_8c1ft"]
-[ext_resource type="Script" uid="uid://brqowopw12vmt" path="res://lessons_reference/video_16/mob/skeleton/skeleton_rogue.gd" id="3_o6gd1"]
 [ext_resource type="AudioStream" uid="uid://cpc7jmbuyqjib" path="res://Sound/monster-5die.wav" id="4_lorai"]
 [ext_resource type="AudioStream" uid="uid://d138aoiw77kby" path="res://Sound/monster-8.wav" id="5_lorai"]
 
@@ -21,10 +20,9 @@ script = ExtResource("1_lorai")
 [node name="Skeleton_Rogue" parent="." instance=ExtResource("2_8c1ft")]
 unique_name_in_owner = true
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-script = ExtResource("3_o6gd1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.396632, 0)
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0.51, 0)
 shape = SubResource("CapsuleShape3D_k6dj5")
 
 [node name="Timer" type="Timer" parent="."]

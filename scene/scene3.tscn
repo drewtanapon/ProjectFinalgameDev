@@ -1,6 +1,6 @@
-[gd_scene load_steps=54 format=3 uid="uid://be75dc467ig1q"]
+[gd_scene load_steps=55 format=3 uid="uid://be75dc467ig1q"]
 
-[ext_resource type="Script" path="res://scene/scene_3.gd" id="1_26ho1"]
+[ext_resource type="Script" uid="uid://cagoby2vb81up" path="res://scene/scene_3.gd" id="1_26ho1"]
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="1_g4l4l"]
 [ext_resource type="PackedScene" uid="uid://co81ldtocyhav" path="res://addons/Bridge01.fbx" id="2_li1s7"]
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="3_7yytx"]

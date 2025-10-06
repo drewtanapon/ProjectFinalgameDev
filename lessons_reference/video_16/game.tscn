@@ -45,7 +45,6 @@
 [ext_resource type="PackedScene" uid="uid://b80qe2fkyh5ig" path="res://assets/Assetsฉากต่างๆ/gltf/lantern_hanging.gltf" id="42_f1n1w"]
 [ext_resource type="PackedScene" uid="uid://bcor1gdak210e" path="res://assets/Assetsฉากต่างๆ/gltf/ribcage.gltf" id="43_ta1wo"]
 [ext_resource type="PackedScene" uid="uid://clyj0kwfth08e" path="res://first_aid_kit.tscn" id="44_ta1wo"]
-[ext_resource type="AudioStream" uid="uid://dclm3dlbnyhlw" path="res://Sound/2 - The Haunted Castle (no loop).wav" id="45_6j8g2"]
 [ext_resource type="PackedScene" uid="uid://ba7dura8xu80v" path="res://lessons_reference/video_16/mob/mob3.tscn" id="45_13qqb"]
 
 [sub_resource type="Environment" id="Environment_pev5d"]
