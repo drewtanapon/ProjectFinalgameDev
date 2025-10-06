@@ -1,5 +1,4 @@
-
-[gd_scene load_steps=57 format=4 uid="uid://bl2wbem3fwmr8"]
+[gd_scene load_steps=58 format=4 uid="uid://bl2wbem3fwmr8"]
 
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="1_fqdcw"]
 [ext_resource type="Script" uid="uid://bl4rvfo6g3wbf" path="res://lessons_reference/video_16/game.gd" id="1_xym6k"]
@@ -703,7 +702,8 @@ shape = SubResource("BoxShape3D_2b8ir")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.625077, -0.738654, 1.24808)
 
 [node name="FirstAidKit" parent="." instance=ExtResource("44_ta1wo")]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 9.645, 1.4, 6.134)
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 8.37607, 1.38499, -7.05718)
+
 [node name="MobSpawner3D2" parent="." instance=ExtResource("5_7vlo8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0786, 0.448688, 6.1912)
 mob_to_spawn = ExtResource("45_13qqb")

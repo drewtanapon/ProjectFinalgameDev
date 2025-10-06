@@ -1,10 +1,10 @@
-[gd_scene load_steps=55 format=4 uid="uid://bpqvmc7qt8xut"]
+[gd_scene load_steps=55 format=4 uid="uid://qu70txr6kx3q"]
 
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="1_fqdcw"]
 [ext_resource type="Script" uid="uid://bl4rvfo6g3wbf" path="res://lessons_reference/video_16/game.gd" id="1_xym6k"]
 [ext_resource type="Material" uid="uid://spdpie6nlr1q" path="res://lessons_reference/video_16/level/bridges.tres" id="4_mc4jw"]
 [ext_resource type="PackedScene" uid="uid://xtl5acmpaa04" path="res://lessons_reference/video_16/mob/spawner_3d.tscn" id="5_7vlo8"]
-[ext_resource type="PackedScene" uid="uid://sojqv4ln1b2n" path="res://lessons_reference/video_16/mob/mob2.tscn" id="5_gh1du"]
+[ext_resource type="PackedScene" uid="uid://sojqv4ln1b2n" path="res://lessons_reference/mob2.tscn" id="5_gh1du"]
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="5_l41we"]
 [ext_resource type="PackedScene" uid="uid://cwehnbykdoplr" path="res://assets/Assetsฉากต่างๆ/gltf/tree_dead_large.gltf" id="8_3wpyi"]
 [ext_resource type="PackedScene" uid="uid://neaay8nsuji6" path="res://assets/Assetsฉากต่างๆ/gltf/fence_seperate_broken.gltf" id="9_ircu3"]
@@ -114,11 +114,11 @@ transform = Transform3D(0.707107, -0.612373, 0.353553, 0, 0.5, 0.866026, -0.7071
 shadow_enabled = true
 directional_shadow_max_distance = 40.0
 
-[node name="Player" parent="." groups=["player"] instance=ExtResource("1_fqdcw")]
+[node name="Player" parent="." instance=ExtResource("1_fqdcw")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7, 0.507239, -7.5)
 
 [node name="KillPlane" type="Area3D" parent="."]
-transform = Transform3D(6.475, 0, 0, 0, 6.475, 0, 0, 0, 6.475, -7, -9.657101, 5.255642)
+transform = Transform3D(6.475, 0, 0, 0, 6.475, 0, 0, 0, 6.475, -7, -9.6571, 5.25564)
 collision_layer = 0
 collision_mask = 2
 monitorable = false
