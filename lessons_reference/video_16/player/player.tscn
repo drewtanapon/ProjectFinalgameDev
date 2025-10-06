@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://d3kp34dihjeyd"]
+[gd_scene load_steps=8 format=3 uid="uid://d3kp34dihjeyd"]
 
 [ext_resource type="Script" uid="uid://8vhepp8ap6hu" path="res://lessons_reference/video_16/player/player.gd" id="1_g3eiy"]
 [ext_resource type="PackedScene" uid="uid://coqxprknx83li" path="res://assets/Modelsgun/GLTF format/blasterD.glb" id="2_y8jjm"]
+[ext_resource type="PackedScene" uid="uid://dls18eeij47k4" path="res://lessons_reference/challenges/player_health_bar.tscn" id="3_k5scx"]
 [ext_resource type="Texture2D" uid="uid://courndspfmq8n" path="res://player/reticle.png" id="3_r7as2"]
 [ext_resource type="AudioStream" uid="uid://b60djage857j5" path="res://player/gun_shoot.wav" id="4_0d82q"]
 [ext_resource type="PackedScene" uid="uid://d22ak8a25gwfi" path="res://scene/player.tscn" id="5_y8jjm"]
@@ -10,7 +11,7 @@
 radius = 0.397298
 height = 1.41322
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
 collision_layer = 2
 script = ExtResource("1_g3eiy")
 
@@ -29,6 +30,13 @@ transform = Transform3D(-0.999926, 0, 0.0121821, 0, 1, 0, -0.0121821, 0, -0.9999
 unique_name_in_owner = true
 transform = Transform3D(0.42952, 0, 0, 0, 0.42952, 0, 0, 0, 0.42952, 0.222319, -0.188977, -0.867053)
 gizmo_extents = 0.37
+
+[node name="HealthBar" parent="Camera3D" instance=ExtResource("3_k5scx")]
+unique_name_in_owner = true
+offset_left = 145.0
+offset_top = 1000.0
+offset_right = 540.0
+offset_bottom = 1034.0
 
 [node name="Timer" type="Timer" parent="."]
 unique_name_in_owner = true

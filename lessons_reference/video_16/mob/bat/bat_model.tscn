@@ -200,19 +200,19 @@ radius = 0.404727
 script = ExtResource("1_ppjak")
 
 [node name="Skeleton3D" parent="Armature" index="0"]
-bones/0/position = Vector3(0, -0.0209413, 0)
-bones/1/rotation = Quaternion(0.0154733, 0.134285, -0.626177, 0.767874)
-bones/2/rotation = Quaternion(-0.156198, -0.0507528, 0.305692, 0.937859)
-bones/3/rotation = Quaternion(-0.204065, 0.000130025, 0.226283, 0.952446)
-bones/4/rotation = Quaternion(0.0154733, -0.134285, 0.626177, 0.767874)
-bones/5/rotation = Quaternion(-0.156198, 0.0507528, -0.305692, 0.937859)
-bones/6/rotation = Quaternion(-0.204065, -0.000130025, -0.226283, 0.952446)
+bones/0/position = Vector3(0, -0.00597172, 0)
+bones/1/rotation = Quaternion(-0.0228221, 0.182631, -0.687663, 0.702313)
+bones/2/rotation = Quaternion(-0.0452139, -0.0129477, 0.278628, 0.959247)
+bones/3/rotation = Quaternion(0.0512224, 0.0633276, 0.268877, 0.959724)
+bones/4/rotation = Quaternion(-0.0228221, -0.182631, 0.687663, 0.702313)
+bones/5/rotation = Quaternion(-0.0452139, 0.0129477, -0.278628, 0.959247)
+bones/6/rotation = Quaternion(0.0512224, -0.0633276, -0.268877, 0.959724)
 bones/7/position = Vector3(0.130992, -0.227392, -0.0878515)
 bones/7/rotation = Quaternion(0.261968, 0.0834552, 0.265751, 0.924005)
-bones/8/rotation = Quaternion(3.72418e-08, 0.562379, 0.82688, 2.39624e-08)
+bones/8/rotation = Quaternion(3.84071e-08, 0.693192, 0.720753, 1.76262e-08)
 bones/10/position = Vector3(-0.130992, -0.227392, -0.0878515)
 bones/10/rotation = Quaternion(0.261968, -0.0834552, -0.265751, 0.924005)
-bones/11/rotation = Quaternion(2.42291e-08, 0.562379, 0.82688, 3.95384e-08)
+bones/11/rotation = Quaternion(2.46669e-08, 0.693192, 0.720753, 3.61854e-08)
 
 [node name="bat" parent="Armature/Skeleton3D" index="0"]
 surface_material_override/0 = ExtResource("3_uqgpt")
@@ -234,7 +234,7 @@ parameters/OneShot/request = 0
 
 [node name="Hitbox" type="Area3D" parent="." index="3"]
 unique_name_in_owner = true
-collision_mask = 3
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hitbox" index="0"]
 shape = SubResource("SphereShape3D_ynvxi")

@@ -110,6 +110,9 @@ func take_damage(amount: int, from_world_pos: Vector3 = global_transform.origin)
 	if is_dead: return
 	_set_health(health - amount)
 	apply_knockback(from_world_pos)
+	var prev := health
+	health = clamp(health - amount, 0, max_health)
+	print("[PLAYER] DMG from=", from_world_pos, " -", amount, "  HP:", prev, "->", health)
 
 func heal(amount: int) -> void:
 	_set_health(health + amount)

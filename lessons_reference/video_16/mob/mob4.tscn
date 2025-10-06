@@ -6,7 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://ha0bp3cygkq1" path="res://mob/mob_ko.wav" id="6_5w51o"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_k6dj5"]
-height = 1.5458984
+height = 1.5459
 
 [node name="Mob" type="RigidBody3D"]
 top_level = true
@@ -21,7 +21,7 @@ unique_name_in_owner = true
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0.51062715, 0)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0.510627, 0)
 shape = SubResource("CapsuleShape3D_k6dj5")
 
 [node name="Timer" type="Timer" parent="."]
