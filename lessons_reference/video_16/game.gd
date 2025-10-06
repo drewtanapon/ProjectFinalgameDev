@@ -31,3 +31,6 @@ func do_poof(mob_position):
 	var poof := SMOKE_PUFF.instantiate()
 	add_child(poof)
 	poof.global_position = mob_position
+	
+	
+	
