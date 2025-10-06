@@ -92,7 +92,7 @@ func shoot_bullet():
 	%Marker3D.add_child(new_bullet)
 
 	new_bullet.global_transform = %Marker3D.global_transform
-
+	%Timer.wait_time = 0.001
 	%Timer.start()
 	%AudioStreamPlayer.play()
 
