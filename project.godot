@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Your First 3D Game With Godot 4 (GDQuest)"
-run/main_scene="uid://bl2wbem3fwmr8"
-config/features=PackedStringArray("4.4", "Forward Plus")
+run/main_scene="uid://bpqvmc7qt8xut"
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.png"
 
 [audio]
