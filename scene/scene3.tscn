@@ -128,8 +128,7 @@ volume_db = -15.459
 autoplay = true
 
 [node name="white_bg" type="ColorRect" parent="Player"]
-visible = false
-offset_right = 1907.0
+offset_right = 1915.0
 offset_bottom = 1080.0
 
 [node name="congratulations" type="Label" parent="Player"]

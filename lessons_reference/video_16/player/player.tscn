@@ -36,10 +36,10 @@ gizmo_extents = 0.37
 
 [node name="HealthBar" parent="Camera3D" instance=ExtResource("3_k5scx")]
 unique_name_in_owner = true
-offset_left = 145.0
-offset_top = 1000.0
-offset_right = 540.0
-offset_bottom = 1034.0
+offset_left = 147.0
+offset_top = 965.0
+offset_right = 542.0
+offset_bottom = 999.0
 
 [node name="youDie" type="Label" parent="Camera3D"]
 offset_left = 497.0
