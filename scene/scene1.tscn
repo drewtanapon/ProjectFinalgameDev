@@ -1,6 +1,6 @@
 [gd_scene load_steps=34 format=3 uid="uid://dyf717ji4312e"]
 
-[ext_resource type="Script" path="res://scene/scene_1.gd" id="1_u14kr"]
+[ext_resource type="Script" uid="uid://b0a70slf2ng1l" path="res://scene/scene_1.gd" id="1_u14kr"]
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="1_wlubc"]
 [ext_resource type="PackedScene" uid="uid://chhtqajy8pui" path="res://assets/Assetsฉากต่างๆ/gltf/fence.gltf" id="2_icvjd"]
 [ext_resource type="PackedScene" uid="uid://8pwro6nr1tkl" path="res://assets/Assetsฉากต่างๆ/gltf/crypt.gltf" id="3_n2bin"]
@@ -26,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://cndb6rqybipen" path="res://assets/Assetsฉากต่างๆ/gltf/tree_dead_large_decorated.gltf" id="21_bxgp1"]
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="22_n2bin"]
 [ext_resource type="PackedScene" uid="uid://clyj0kwfth08e" path="res://first_aid_kit.tscn" id="23_u14kr"]
+[ext_resource type="AudioStream" uid="uid://d2a3k1wu0xpuv" path="res://Sound/6 - Impish Dance (no loop).wav" id="26_8k2pk"]
 [ext_resource type="PackedScene" uid="uid://b5xgdttaspmk" path="res://lessons_reference/video_16/mob/mob1.tscn" id="26_gipnd"]
 [ext_resource type="PackedScene" uid="uid://ex12fioxf333" path="res://lessons_reference/video_16/mob/mob4.tscn" id="26_st38c"]
 
@@ -404,6 +405,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1749, 0.360369, 6.847)
 [node name="Player" parent="." instance=ExtResource("22_n2bin")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7, 9.42759, -7.5)
 
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource("26_8k2pk")
+volume_db = -7.027
+autoplay = true
+
 [node name="StaticBody3D3" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3"]
@@ -452,3 +458,5 @@ transform = Transform3D(0.0343936, 0, -0.999408, 0, 1, 0, 0.999408, 0, 0.0343936
 mob_to_spawn = ExtResource("26_gipnd")
 
 [connection signal="mob_spawned" from="StaticBody3D/MobSpawner3D" to="." method="_on_mob_spawner_3d_mob_spawned"]
+[connection signal="mob_spawned" from="MobSpawner3D" to="." method="_on_mob_spawner_3d_mob_spawned"]
+[connection signal="mob_spawned" from="MobSpawner3D2" to="." method="_on_mob_spawner_3d_mob_spawned"]

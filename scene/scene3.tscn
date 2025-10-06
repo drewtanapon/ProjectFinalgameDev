@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://co81ldtocyhav" path="res://addons/Bridge01.fbx" id="2_li1s7"]
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="3_7yytx"]
 [ext_resource type="PackedScene" uid="uid://cpm2r3rc5h6yp" path="res://assets/Assetsฉากต่างๆ/scene/Assembled_Wall_2.fbx" id="4_li1s7"]
+[ext_resource type="AudioStream" uid="uid://dclm3dlbnyhlw" path="res://Sound/2 - The Haunted Castle (no loop).wav" id="5_o878g"]
 [ext_resource type="PackedScene" uid="uid://cld8esxr0n1ua" path="res://assets/Assetsฉากต่างๆ/gltf/fence_gate.gltf" id="5_yvo7k"]
 [ext_resource type="PackedScene" uid="uid://bp6owml2r3vvi" path="res://assets/Assetsฉากต่างๆ/gltf/grave_A_destroyed.gltf" id="6_sgug4"]
 [ext_resource type="PackedScene" uid="uid://dng6l1cw4hato" path="res://assets/Assetsฉากต่างๆ/scene/Tree_3.fbx" id="7_cuxe5"]
@@ -120,6 +121,11 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.163946, 0.466872, 0.524401
 
 [node name="Player" parent="." instance=ExtResource("3_7yytx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.3569, 3.33991, 40.1413)
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource("5_o878g")
+volume_db = -15.459
+autoplay = true
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="."]
 

@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="1_fqdcw"]
 [ext_resource type="Script" uid="uid://bl4rvfo6g3wbf" path="res://lessons_reference/video_16/game.gd" id="1_xym6k"]
+[ext_resource type="AudioStream" uid="uid://dmavxfnxabg05" path="res://Sound/5 - Magical Mischief (no loop).wav" id="3_6j8g2"]
 [ext_resource type="Material" uid="uid://spdpie6nlr1q" path="res://lessons_reference/video_16/level/bridges.tres" id="4_mc4jw"]
 [ext_resource type="PackedScene" uid="uid://xtl5acmpaa04" path="res://lessons_reference/video_16/mob/spawner_3d.tscn" id="5_7vlo8"]
 [ext_resource type="PackedScene" uid="uid://sojqv4ln1b2n" path="res://lessons_reference/mob2.tscn" id="5_gh1du"]
@@ -125,7 +126,7 @@ sky_mode = 1
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7, 0.507239, -7.5)
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Player"]
-stream = ExtResource("45_6j8g2")
+stream = ExtResource("3_6j8g2")
 volume_db = -17.558
 autoplay = true
 
@@ -710,3 +711,4 @@ mob_to_spawn = ExtResource("45_13qqb")
 
 [connection signal="body_entered" from="KillPlane" to="." method="_on_kill_plane_body_entered"]
 [connection signal="mob_spawned" from="MobSpawner3D" to="." method="_on_mob_spawner_3d_mob_spawned"]
+[connection signal="mob_spawned" from="MobSpawner3D2" to="." method="_on_mob_spawner_3d_mob_spawned"]
