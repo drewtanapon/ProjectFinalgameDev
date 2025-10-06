@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=4 uid="uid://bpqvmc7qt8xut"]
+[gd_scene load_steps=57 format=4 uid="uid://bpqvmc7qt8xut"]
 
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="1_fqdcw"]
 [ext_resource type="Script" uid="uid://bl4rvfo6g3wbf" path="res://lessons_reference/video_16/game.gd" id="1_xym6k"]
@@ -44,6 +44,7 @@
 [ext_resource type="PackedScene" uid="uid://bv2cd8hiubg7j" path="res://assets/Assetsฉากต่างๆ/gltf/shrine.gltf" id="41_vh1sv"]
 [ext_resource type="PackedScene" uid="uid://b80qe2fkyh5ig" path="res://assets/Assetsฉากต่างๆ/gltf/lantern_hanging.gltf" id="42_f1n1w"]
 [ext_resource type="PackedScene" uid="uid://bcor1gdak210e" path="res://assets/Assetsฉากต่างๆ/gltf/ribcage.gltf" id="43_ta1wo"]
+[ext_resource type="AudioStream" uid="uid://dclm3dlbnyhlw" path="res://Sound/2 - The Haunted Castle (no loop).wav" id="45_6j8g2"]
 
 [sub_resource type="Environment" id="Environment_pev5d"]
 background_mode = 1
@@ -127,6 +128,10 @@ text = "Score: 0"
 
 [node name="Player" parent="." instance=ExtResource("1_fqdcw")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7, 0.507239, -7.5)
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource("45_6j8g2")
+autoplay = true
 
 [node name="KillPlane" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -2.15, -6.5)

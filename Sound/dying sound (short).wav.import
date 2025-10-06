@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://iulrncyt5281"
+path="res://.godot/imported/dying sound (short).wav-a1c4a141d043085e30369b709f5253fe.sample"
+
+[deps]
+
+source_file="res://Sound/dying sound (short).wav"
+dest_files=["res://.godot/imported/dying sound (short).wav-a1c4a141d043085e30369b709f5253fe.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

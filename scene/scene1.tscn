@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://dyf717ji4312e"]
+[gd_scene load_steps=29 format=3 uid="uid://dyf717ji4312e"]
 
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="1_wlubc"]
 [ext_resource type="PackedScene" uid="uid://chhtqajy8pui" path="res://assets/Assetsฉากต่างๆ/gltf/fence.gltf" id="2_icvjd"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://cqn2v575d86g5" path="res://assets/Assetsฉากต่างๆ/gltf/path_C.gltf" id="20_hks8s"]
 [ext_resource type="PackedScene" uid="uid://cndb6rqybipen" path="res://assets/Assetsฉากต่างๆ/gltf/tree_dead_large_decorated.gltf" id="21_bxgp1"]
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="22_n2bin"]
+[ext_resource type="AudioStream" uid="uid://dmavxfnxabg05" path="res://Sound/5 - Magical Mischief (no loop).wav" id="23_u14kr"]
 
 [sub_resource type="Environment" id="Environment_n2bin"]
 background_mode = 1
@@ -425,3 +426,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5573, -0.119839, -9.23486)
 
 [node name="fence9" parent="StaticBody3D3/CollisionShape3D/Node3D2" instance=ExtResource("2_icvjd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5393, -0.119839, -9.23486)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("23_u14kr")
+autoplay = true

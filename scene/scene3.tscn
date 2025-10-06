@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://be75dc467ig1q"]
+[gd_scene load_steps=47 format=3 uid="uid://be75dc467ig1q"]
 
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="1_g4l4l"]
 [ext_resource type="PackedScene" uid="uid://co81ldtocyhav" path="res://addons/Bridge01.fbx" id="2_li1s7"]
@@ -39,6 +39,7 @@
 [ext_resource type="PackedScene" uid="uid://725fia3ngfoe" path="res://assets/Assetsฉากต่างๆ/gltf/floor_dirt_small.gltf" id="37_ht72c"]
 [ext_resource type="PackedScene" uid="uid://d2676j6wvtku2" path="res://assets/Assetsฉากต่างๆ/gltf/coffin_decorated.gltf" id="38_26ho1"]
 [ext_resource type="PackedScene" uid="uid://b5m1lc1u7sj3s" path="res://assets/Assetsฉากต่างๆ/gltf/fence_pillar.gltf" id="39_mx1c6"]
+[ext_resource type="AudioStream" uid="uid://d2a3k1wu0xpuv" path="res://Sound/6 - Impish Dance (no loop).wav" id="40_ctexo"]
 
 [sub_resource type="Environment" id="Environment_7yytx"]
 background_mode = 1
@@ -563,3 +564,7 @@ transform = Transform3D(0.722448, 0, 0.691425, 0, 1, 0, -0.691425, 0, 0.722448, 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9159, 1.56073, 41.0642)
 shape = SubResource("SphereShape3D_pcmrr")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("40_ctexo")
+autoplay = true
