@@ -16,6 +16,6 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="grave_B2" parent="." instance=ExtResource("2_75aid")]
-transform = Transform3D(0.012775507, 0, -0.9999184, 0, 1, 0, 0.9999184, 0, 0.012775507, 0, 0, 0)
+transform = Transform3D(0.0127755, 0, -0.999918, 0, 1, 0, 0.999918, 0, 0.0127755, 0, 0, 0)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -9,7 +9,7 @@
 size = Vector3(0.5, 1, 0.5)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bgxp1"]
-height = 2.0996094
+height = 2.09961
 
 [node name="Mob" type="RigidBody3D"]
 top_level = true
@@ -28,7 +28,7 @@ unique_name_in_owner = true
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0736544, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.07365, 0)
 visible = false
 shape = SubResource("CapsuleShape3D_bgxp1")
 

@@ -63,11 +63,10 @@ func _on_hitbox_body_entered(body: Node) -> void:
 		var now := Time.get_ticks_msec() / 1000.0
 		if now - _last_hit_time >= hit_cooldown:
 			_last_hit_time = now
-
+			
 			var hit_from: Vector3
 			if is_instance_valid(hitbox):
 				hit_from = (hitbox as Node3D).global_position  # หรือ .global_transform.origin
 			else:
 				hit_from = global_position
-
 			body.take_damage_by_ratio(damage_ratio, hit_from)

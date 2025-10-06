@@ -1,7 +1,8 @@
-[gd_scene load_steps=55 format=4 uid="uid://bpqvmc7qt8xut"]
+[gd_scene load_steps=56 format=4 uid="uid://bpqvmc7qt8xut"]
 
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="1_fqdcw"]
 [ext_resource type="Script" uid="uid://bl4rvfo6g3wbf" path="res://lessons_reference/video_16/game.gd" id="1_xym6k"]
+[ext_resource type="FontFile" uid="uid://r3tmh6trx142" path="res://assets/RetroBritish-DemoVersion-Regular.otf" id="2_ta1wo"]
 [ext_resource type="Material" uid="uid://spdpie6nlr1q" path="res://lessons_reference/video_16/level/bridges.tres" id="4_mc4jw"]
 [ext_resource type="PackedScene" uid="uid://xtl5acmpaa04" path="res://lessons_reference/video_16/mob/spawner_3d.tscn" id="5_7vlo8"]
 [ext_resource type="PackedScene" uid="uid://sojqv4ln1b2n" path="res://lessons_reference/video_16/mob/mob2.tscn" id="5_gh1du"]
@@ -121,6 +122,7 @@ offset_left = 28.0
 offset_top = 15.0
 offset_right = 256.0
 offset_bottom = 101.0
+theme_override_fonts/font = ExtResource("2_ta1wo")
 theme_override_font_sizes/font_size = 60
 text = "Score: 0"
 
