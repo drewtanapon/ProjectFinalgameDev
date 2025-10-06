@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://b3iafaa76nfye"]
+[gd_scene load_steps=46 format=3 uid="uid://be75dc467ig1q"]
 
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="1_g4l4l"]
 [ext_resource type="PackedScene" uid="uid://co81ldtocyhav" path="res://addons/Bridge01.fbx" id="2_li1s7"]
