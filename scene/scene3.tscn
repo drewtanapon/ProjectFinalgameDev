@@ -1,6 +1,6 @@
-[gd_scene load_steps=50 format=3 uid="uid://fwsd58paxvrx"]
+[gd_scene load_steps=53 format=3 uid="uid://be75dc467ig1q"]
 
-[ext_resource type="Script" uid="uid://cagoby2vb81up" path="res://scene/scene_3.gd" id="1_26ho1"]
+[ext_resource type="Script" path="res://scene/scene_3.gd" id="1_26ho1"]
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="1_g4l4l"]
 [ext_resource type="PackedScene" uid="uid://co81ldtocyhav" path="res://addons/Bridge01.fbx" id="2_li1s7"]
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="3_7yytx"]
@@ -41,7 +41,10 @@
 [ext_resource type="PackedScene" uid="uid://d2676j6wvtku2" path="res://assets/Assetsฉากต่างๆ/gltf/coffin_decorated.gltf" id="38_26ho1"]
 [ext_resource type="PackedScene" uid="uid://b5m1lc1u7sj3s" path="res://assets/Assetsฉากต่างๆ/gltf/fence_pillar.gltf" id="39_mx1c6"]
 [ext_resource type="PackedScene" uid="uid://xtl5acmpaa04" path="res://lessons_reference/video_16/mob/spawner_3d.tscn" id="41_mx1c6"]
-[ext_resource type="PackedScene" uid="uid://sojqv4ln1b2n" path="res://lessons_reference/video_16/mob/mob2.tscn" id="42_kv6pi"]
+[ext_resource type="PackedScene" uid="uid://sojqv4ln1b2n" path="res://lessons_reference/mob2.tscn" id="42_kv6pi"]
+[ext_resource type="PackedScene" uid="uid://b5xgdttaspmk" path="res://lessons_reference/video_16/mob/mob1.tscn" id="42_mm43o"]
+[ext_resource type="PackedScene" uid="uid://ba7dura8xu80v" path="res://lessons_reference/video_16/mob/mob3.tscn" id="44_o878g"]
+[ext_resource type="PackedScene" uid="uid://ex12fioxf333" path="res://lessons_reference/video_16/mob/mob4.tscn" id="45_5or0q"]
 
 [sub_resource type="Environment" id="Environment_7yytx"]
 background_mode = 1
@@ -115,7 +118,7 @@ shape = SubResource("BoxShape3D_g4l4l")
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.163946, 0.466872, 0.524401)
 
 [node name="Player" parent="." instance=ExtResource("3_7yytx")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 30.3569, 3.33991, 40.1413)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.3569, 3.33991, 40.1413)
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="."]
 
@@ -571,23 +574,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9159, 1.56073, 41.0642)
 shape = SubResource("SphereShape3D_pcmrr")
 
 [node name="MobSpawner3D" parent="." instance=ExtResource("41_mx1c6")]
-transform = Transform3D(-0.6460041, 0, -0.763334, 0, 1, 0, 0.763334, 0, -0.6460041, 29.317938, -0.23010111, 11.3959)
-mob_to_spawn = ExtResource("42_kv6pi")
+transform = Transform3D(-0.646004, 0, -0.763334, 0, 1, 0, 0.763334, 0, -0.646004, 29.3179, -0.230101, 11.3959)
+mob_to_spawn = ExtResource("42_mm43o")
 
 [node name="MobSpawner3D2" parent="." instance=ExtResource("41_mx1c6")]
-transform = Transform3D(0.14107397, 0, 0.9899991, 0, 1, 0, -0.9899991, 0, 0.14107397, 44.627937, 0.043086052, 4.8679595)
+transform = Transform3D(0.141074, 0, 0.989999, 0, 1, 0, -0.989999, 0, 0.141074, 44.6279, 0.0430861, 4.86796)
 mob_to_spawn = ExtResource("42_kv6pi")
 
 [node name="MobSpawner3D3" parent="." instance=ExtResource("41_mx1c6")]
-transform = Transform3D(0.6645655, 0, -0.74723005, 0, 1, 0, 0.74723005, 0, 0.6645655, 47.15393, -0.18701506, 15.506634)
-mob_to_spawn = ExtResource("42_kv6pi")
+transform = Transform3D(0.664566, 0, -0.74723, 0, 1, 0, 0.74723, 0, 0.664566, 47.1539, -0.187015, 15.5066)
+mob_to_spawn = ExtResource("44_o878g")
 
 [node name="MobSpawner3D4" parent="." instance=ExtResource("41_mx1c6")]
-transform = Transform3D(-0.99969816, 0, -0.024571717, 0, 1, 0, 0.024571717, 0, -0.99969816, 20.145626, 0.5368171, 12.342572)
-mob_to_spawn = ExtResource("42_kv6pi")
+transform = Transform3D(-0.999698, 0, -0.0245717, 0, 1, 0, 0.0245717, 0, -0.999698, 20.1456, 0.174749, 12.3426)
+mob_to_spawn = ExtResource("45_5or0q")
 
 [node name="KillPlane" type="Area3D" parent="."]
-transform = Transform3D(6.475, 0, 0, 0, 6.475, 0, 0, 0, 6.475, 22.848867, -9.657101, 21.698544)
+transform = Transform3D(6.475, 0, 0, 0, 6.475, 0, 0, 0, 6.475, 22.8489, -9.6571, 21.6985)
 collision_layer = 0
 collision_mask = 2
 monitorable = false

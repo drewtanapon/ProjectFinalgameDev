@@ -7,7 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://b60djage857j5" path="res://player/gun_shoot.wav" id="4_0d82q"]
 [ext_resource type="FontFile" uid="uid://cd7pijjjd4hto" path="res://assets/RetroBritish-DemoVersion-Regular.ttf" id="4_ifwga"]
 [ext_resource type="FontFile" uid="uid://r3tmh6trx142" path="res://assets/RetroBritish-DemoVersion-Regular.otf" id="5_oc7id"]
-[ext_resource type="PackedScene" path="res://scene/player.tscn" id="5_y8jjm"]
+[ext_resource type="PackedScene" uid="uid://d22ak8a25gwfi" path="res://scene/player.tscn" id="5_y8jjm"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ctapl"]
 radius = 0.397298
