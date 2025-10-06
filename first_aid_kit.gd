@@ -1,6 +1,6 @@
 extends Node3D
 
-@export var respawn_time: float = 10.0
+@export var respawn_time: float = 30.0
 @export var idle_anim_name: String = "Idle"
 @export var pickup_fx_path: NodePath
 @export var player_layer_index: int = 2

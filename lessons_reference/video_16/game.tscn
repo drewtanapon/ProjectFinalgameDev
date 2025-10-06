@@ -47,19 +47,19 @@
 
 [sub_resource type="Environment" id="Environment_pev5d"]
 background_mode = 1
-background_color = Color(1.05888e-06, 0.378969, 0.475615, 1)
+background_color = Color(4.76494e-06, 0.466208, 0.582282, 1)
 ambient_light_source = 2
-ambient_light_color = Color(0.560003, 0.455413, 0.303927, 1)
+ambient_light_color = Color(0.418701, 0.320865, 0.193576, 1)
 ambient_light_sky_contribution = 0.31
-tonemap_mode = 2
+tonemap_mode = 4
 tonemap_exposure = 1.05
 tonemap_white = 0.95
 ssao_intensity = 1.0
 glow_normalized = true
 glow_intensity = 0.2
 fog_enabled = true
-fog_light_color = Color(0.367375, 0.271268, 0.276376, 1)
-fog_density = 0.002
+fog_light_color = Color(0.804149, 0.700222, 0.704388, 1)
+fog_light_energy = 5.0
 fog_height = 0.52
 fog_height_density = 0.1319
 volumetric_fog_density = 0.1525
@@ -111,9 +111,13 @@ script = ExtResource("1_xym6k")
 environment = SubResource("Environment_pev5d")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.707107, -0.612373, 0.353553, 0, 0.5, 0.866026, -0.707107, -0.612373, 0.353553, 0.510616, 8.84134, 0.100216)
+transform = Transform3D(0.707107, -0.612373, 0.353553, 0, 0.5, 0.866026, -0.707107, -0.612373, 0.353553, -0.101629, 64.8718, -0.382436)
+light_color = Color(0.724643, 0.724643, 0.724643, 1)
 shadow_enabled = true
+shadow_normal_bias = 0.0
+directional_shadow_mode = 1
 directional_shadow_max_distance = 40.0
+sky_mode = 1
 
 [node name="Label" type="Label" parent="."]
 unique_name_in_owner = true
@@ -700,7 +704,7 @@ shape = SubResource("BoxShape3D_2b8ir")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.625077, -0.738654, 1.24808)
 
 [node name="FirstAidKit" parent="." instance=ExtResource("44_ta1wo")]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 9.64518, 1.35285, 6.13357)
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 9.645, 1.4, 6.134)
 
 [connection signal="body_entered" from="KillPlane" to="." method="_on_kill_plane_body_entered"]
 [connection signal="mob_spawned" from="MobSpawner3D" to="." method="_on_mob_spawner_3d_mob_spawned"]
