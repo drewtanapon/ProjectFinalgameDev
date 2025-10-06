@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://courndspfmq8n" path="res://player/reticle.png" id="3_r7as2"]
 [ext_resource type="FontFile" uid="uid://cd7pijjjd4hto" path="res://assets/RetroBritish-DemoVersion-Regular.ttf" id="4_ifwga"]
 [ext_resource type="FontFile" uid="uid://r3tmh6trx142" path="res://assets/RetroBritish-DemoVersion-Regular.otf" id="5_oc7id"]
-[ext_resource type="PackedScene" path="res://scene/player.tscn" id="5_y8jjm"]
+[ext_resource type="PackedScene" uid="uid://d22ak8a25gwfi" path="res://scene/player.tscn" id="5_y8jjm"]
 [ext_resource type="AudioStream" uid="uid://c2235q1s83eu7" path="res://Sound/lmg_fire01.mp3" id="7_oc7id"]
 [ext_resource type="AudioStream" uid="uid://cykdyame6f0yu" path="res://Sound/laugh 1.mp3" id="8_6111q"]
 
@@ -98,7 +98,6 @@ max_polyphony = 4
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("8_6111q")
-volume_db = 24.0
 
 [node name="character-g2" parent="." instance=ExtResource("5_y8jjm")]
 transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 0, 0, 0.125763)
