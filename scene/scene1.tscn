@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://dyf717ji4312e"]
+[gd_scene load_steps=34 format=3 uid="uid://dyf717ji4312e"]
 
 [ext_resource type="Script" uid="uid://b0a70slf2ng1l" path="res://scene/scene_1.gd" id="1_u14kr"]
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="1_wlubc"]
@@ -25,26 +25,25 @@
 [ext_resource type="PackedScene" uid="uid://cqn2v575d86g5" path="res://assets/Assetsฉากต่างๆ/gltf/path_C.gltf" id="20_hks8s"]
 [ext_resource type="PackedScene" uid="uid://cndb6rqybipen" path="res://assets/Assetsฉากต่างๆ/gltf/tree_dead_large_decorated.gltf" id="21_bxgp1"]
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="22_n2bin"]
-[ext_resource type="PackedScene" uid="uid://clyj0kwfth08e" path="res://first_aid_kit.tscn" id="23_u14kr"]
 [ext_resource type="AudioStream" uid="uid://d2a3k1wu0xpuv" path="res://Sound/6 - Impish Dance (no loop).wav" id="26_8k2pk"]
 [ext_resource type="PackedScene" uid="uid://b5xgdttaspmk" path="res://lessons_reference/video_16/mob/mob1.tscn" id="26_gipnd"]
 [ext_resource type="PackedScene" uid="uid://ex12fioxf333" path="res://lessons_reference/video_16/mob/mob4.tscn" id="26_st38c"]
 
-[sub_resource type="Environment" id="Environment_u14kr"]
+[sub_resource type="Environment" id="Environment_n2bin"]
 background_mode = 1
-background_color = Color(4.76494e-06, 0.466208, 0.582282, 1)
+background_color = Color(1.05888e-06, 0.378969, 0.475615, 1)
 ambient_light_source = 2
-ambient_light_color = Color(0.418701, 0.320865, 0.193576, 1)
+ambient_light_color = Color(0.560003, 0.455413, 0.303927, 1)
 ambient_light_sky_contribution = 0.31
-tonemap_mode = 4
+tonemap_mode = 2
 tonemap_exposure = 1.05
 tonemap_white = 0.95
 ssao_intensity = 1.0
 glow_normalized = true
 glow_intensity = 0.2
 fog_enabled = true
-fog_light_color = Color(0.804149, 0.700222, 0.704388, 1)
-fog_light_energy = 5.0
+fog_light_color = Color(0.367375, 0.271268, 0.276376, 1)
+fog_density = 0.002
 fog_height = 0.52
 fog_height_density = 0.1319
 volumetric_fog_density = 0.1525
@@ -67,8 +66,8 @@ size = Vector3(33.714, 2.7207, 1.82935)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0579967, 1.90735e-06, -0.089653)
 script = ExtResource("1_u14kr")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_u14kr")
+[node name="WorldEnvironment2" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_n2bin")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.707107, -0.612373, 0.353553, 0, 0.5, 0.866026, -0.707107, -0.612373, 0.353553, 0, 5, 0)
@@ -442,12 +441,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5573, -0.119839, -9.23486)
 
 [node name="fence9" parent="StaticBody3D3/CollisionShape3D/Node3D2" instance=ExtResource("2_icvjd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5393, -0.119839, -9.23486)
-
-[node name="FirstAidKit" parent="." instance=ExtResource("23_u14kr")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 11.628, 0.4, 9.789)
-
-[node name="FirstAidKit2" parent="." instance=ExtResource("23_u14kr")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10.985, 0.4, 10.849)
 
 [node name="MobSpawner3D" parent="." instance=ExtResource("4_0sjfh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8416, -0.0807347, 2.33873)

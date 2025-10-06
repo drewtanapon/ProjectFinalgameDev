@@ -1,14 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://b5xgdttaspmk"]
+[gd_scene load_steps=7 format=3 uid="uid://b5xgdttaspmk"]
 
 [ext_resource type="Script" uid="uid://mqgbv8ffy2j7" path="res://lessons_reference/video_16/mob/mob1.gd" id="1_bgxp1"]
 [ext_resource type="PackedScene" uid="uid://dofv2yewrcbeq" path="res://lessons_reference/video_16/mob/skeleton/skeleton_mage.tscn" id="3_bgxp1"]
 [ext_resource type="AudioStream" uid="uid://cpc7jmbuyqjib" path="res://Sound/monster-5die.wav" id="3_emuj2"]
 [ext_resource type="AudioStream" uid="uid://c63x17475d523" path="res://Sound/monster-6.wav" id="4_emuj2"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_bgxp1"]
+size = Vector3(0.5, 1.10437, 0.5)
+
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bgxp1"]
 height = 2.09961
 
-[node name="Mob2" type="RigidBody3D"]
+[node name="Mob" type="RigidBody3D"]
 top_level = true
 axis_lock_angular_x = true
 axis_lock_angular_y = true
@@ -16,12 +19,17 @@ axis_lock_angular_z = true
 gravity_scale = 0.0
 script = ExtResource("1_bgxp1")
 
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.552185, 0)
+shape = SubResource("BoxShape3D_bgxp1")
+
 [node name="Skeleton_Mage" parent="." instance=ExtResource("3_bgxp1")]
 unique_name_in_owner = true
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.00152898, 0.47685, -0.00285649)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.07365, 0)
+visible = false
 shape = SubResource("CapsuleShape3D_bgxp1")
 
 [node name="Timer" type="Timer" parent="."]

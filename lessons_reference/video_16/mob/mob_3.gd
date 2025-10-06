@@ -14,14 +14,12 @@ var health = 3
 @onready var ko_sound = %KOSound
 @export var gravity_strength := 9.8
 
-@onready var hitbox: Area3D = $"Skeleton_Rogue/HitboxR"    # ใน mob.tscn ควรมีลูกเป็น Area3D ชื่อ Hitbox พร้อม CollisionShape3D
+@onready var hitbox: Area3D = $"Skeleton_Rogue/Hitbox"    # ใน mob.tscn ควรมีลูกเป็น Area3D ชื่อ Hitbox พร้อม CollisionShape3D
 var damage_ratio := 0.33                  # 33%
 var hit_cooldown := 0.5                   # กันหักรัว (วินาที)
 var _last_hit_time := -999.0
 
 func _physics_process(delta):
-	if not player:
-		return  # ป้องกัน null error
 	var velocity = linear_velocity
 
 	# ใส่แรงโน้มถ่วง
