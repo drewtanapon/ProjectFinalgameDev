@@ -7,7 +7,7 @@ func _ready():
 
 func _on_play_pressed():
 	# เมื่อกดปุ่ม PLAY ให้เปลี่ยนฉากไปยังหน้าเกม
-	get_tree().change_scene_to_file("res://scene/game.tscn")
+	get_tree().change_scene_to_file("res://lessons_reference/video_16/game.tscn")
 
 func _on_quit_pressed():
 	# เมื่อกดปุ่ม QUIT ให้ปิดเกม

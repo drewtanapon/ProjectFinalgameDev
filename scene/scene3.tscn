@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://be75dc467ig1q"]
+[gd_scene load_steps=56 format=3 uid="uid://be75dc467ig1q"]
 
 [ext_resource type="Script" uid="uid://cagoby2vb81up" path="res://scene/scene_3.gd" id="1_26ho1"]
 [ext_resource type="Material" uid="uid://cp4gi8r3s3twb" path="res://lessons_reference/video_16/level/platforms.tres" id="1_g4l4l"]
@@ -614,7 +614,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9159, 1.56073, 41.0642)
 shape = SubResource("SphereShape3D_pcmrr")
 
 [node name="FirstAidKit" parent="." instance=ExtResource("40_ctexo")]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 48.9991, 0.4, 6.6352)
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 32.0922, 0.353871, 38.4742)
 
 [node name="MobSpawner3D" parent="." instance=ExtResource("41_mx1c6")]
 transform = Transform3D(-0.646004, 0, -0.763334, 0, 1, 0, 0.763334, 0, -0.646004, 29.3179, -0.230101, 11.3959)
@@ -625,11 +625,11 @@ transform = Transform3D(0.141074, 0, 0.989999, 0, 1, 0, -0.989999, 0, 0.141074, 
 mob_to_spawn = ExtResource("42_kv6pi")
 
 [node name="MobSpawner3D3" parent="." instance=ExtResource("41_mx1c6")]
-transform = Transform3D(0.664566, 0, -0.74723, 0, 1, 0, 0.74723, 0, 0.664566, 47.1539, -0.187015, 15.5066)
+transform = Transform3D(0.664566, 0, -0.74723, 0, 1, 0, 0.74723, 0, 0.664566, 34.2832, -0.129132, 4.64441)
 mob_to_spawn = ExtResource("44_o878g")
 
 [node name="MobSpawner3D4" parent="." instance=ExtResource("41_mx1c6")]
-transform = Transform3D(-0.999698, 0, -0.0245717, 0, 1, 0, 0.0245717, 0, -0.999698, 20.1456, 0.174749, 12.3426)
+transform = Transform3D(-0.999698, 0, -0.0245717, 0, 1, 0, 0.0245717, 0, -0.999698, 21.4842, 0.174749, 6.21263)
 mob_to_spawn = ExtResource("45_5or0q")
 
 [node name="KillPlane" type="Area3D" parent="."]
@@ -640,6 +640,12 @@ monitorable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="KillPlane"]
 shape = SubResource("WorldBoundaryShape3D_26ho1")
+
+[node name="FirstAidKit2" parent="." instance=ExtResource("40_ctexo")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 26.8484, 0.308905, 40.3676)
+
+[node name="FirstAidKit3" parent="." instance=ExtResource("40_ctexo")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 30.3525, 0.303228, 41.7479)
 
 [connection signal="mob_spawned" from="MobSpawner3D" to="." method="_on_mob_spawner_3d_mob_spawned"]
 [connection signal="mob_spawned" from="MobSpawner3D2" to="." method="_on_mob_spawner_3d_mob_spawned"]
