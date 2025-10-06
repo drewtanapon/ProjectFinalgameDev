@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://d3kp34dihjeyd"]
+[gd_scene load_steps=9 format=3 uid="uid://d3kp34dihjeyd"]
 
 [ext_resource type="Script" uid="uid://8vhepp8ap6hu" path="res://lessons_reference/video_16/player/player.gd" id="1_g3eiy"]
 [ext_resource type="PackedScene" uid="uid://coqxprknx83li" path="res://assets/Modelsgun/GLTF format/blasterD.glb" id="2_y8jjm"]
 [ext_resource type="PackedScene" uid="uid://dls18eeij47k4" path="res://lessons_reference/challenges/player_health_bar.tscn" id="3_k5scx"]
 [ext_resource type="Texture2D" uid="uid://courndspfmq8n" path="res://player/reticle.png" id="3_r7as2"]
 [ext_resource type="AudioStream" uid="uid://b60djage857j5" path="res://player/gun_shoot.wav" id="4_0d82q"]
+[ext_resource type="FontFile" uid="uid://cd7pijjjd4hto" path="res://assets/RetroBritish-DemoVersion-Regular.ttf" id="4_ifwga"]
 [ext_resource type="PackedScene" uid="uid://d22ak8a25gwfi" path="res://scene/player.tscn" id="5_y8jjm"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ctapl"]
@@ -39,12 +40,16 @@ offset_right = 540.0
 offset_bottom = 1034.0
 
 [node name="youDie" type="Label" parent="Camera3D"]
-offset_left = 490.0
-offset_top = 231.0
-offset_right = 1428.0
-offset_bottom = 490.0
+offset_left = 497.0
+offset_top = 324.0
+offset_right = 1435.0
+offset_bottom = 583.0
+theme_override_colors/font_color = Color(0.411765, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.552038, 0.236603, 0.189408, 1)
+theme_override_colors/font_outline_color = Color(0.362829, 0.362829, 0.362829, 1)
+theme_override_fonts/font = ExtResource("4_ifwga")
 theme_override_font_sizes/font_size = 100
-text = "YOU DIE"
+text = "YOU DIE "
 horizontal_alignment = 1
 vertical_alignment = 1
 
