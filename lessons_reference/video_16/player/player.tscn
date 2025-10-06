@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://d3kp34dihjeyd"]
+[gd_scene load_steps=10 format=3 uid="uid://d3kp34dihjeyd"]
 
 [ext_resource type="Script" uid="uid://8vhepp8ap6hu" path="res://lessons_reference/video_16/player/player.gd" id="1_g3eiy"]
 [ext_resource type="PackedScene" uid="uid://coqxprknx83li" path="res://assets/Modelsgun/GLTF format/blasterD.glb" id="2_y8jjm"]
@@ -6,13 +6,14 @@
 [ext_resource type="Texture2D" uid="uid://courndspfmq8n" path="res://player/reticle.png" id="3_r7as2"]
 [ext_resource type="AudioStream" uid="uid://b60djage857j5" path="res://player/gun_shoot.wav" id="4_0d82q"]
 [ext_resource type="FontFile" uid="uid://cd7pijjjd4hto" path="res://assets/RetroBritish-DemoVersion-Regular.ttf" id="4_ifwga"]
-[ext_resource type="PackedScene" uid="uid://d22ak8a25gwfi" path="res://scene/player.tscn" id="5_y8jjm"]
+[ext_resource type="FontFile" uid="uid://r3tmh6trx142" path="res://assets/RetroBritish-DemoVersion-Regular.otf" id="5_oc7id"]
+[ext_resource type="PackedScene" path="res://scene/player.tscn" id="5_y8jjm"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ctapl"]
 radius = 0.397298
 height = 1.41322
 
-[node name="Player" type="CharacterBody3D" groups=["Player"]]
+[node name="Player" type="CharacterBody3D" groups=["Player", "player"]]
 collision_layer = 2
 script = ExtResource("1_g3eiy")
 
@@ -52,6 +53,16 @@ theme_override_font_sizes/font_size = 100
 text = "YOU DIE "
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Camera3D"]
+unique_name_in_owner = true
+offset_left = 28.0
+offset_top = 15.0
+offset_right = 256.0
+offset_bottom = 101.0
+theme_override_fonts/font = ExtResource("5_oc7id")
+theme_override_font_sizes/font_size = 60
+text = "Score: 0"
 
 [node name="Timer" type="Timer" parent="."]
 unique_name_in_owner = true
