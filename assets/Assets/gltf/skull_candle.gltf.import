@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://kmad6pb6gb4o"
-path="res://.godot/imported/skull_candle.gltf-4ab6aa9004f6cf599ae7698f551567d6.scn"
+path="res://.godot/imported/skull_candle.gltf-6113f80ff239a39f18c20ee7e57d64f2.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/gltf/skull_candle.gltf"
-dest_files=["res://.godot/imported/skull_candle.gltf-4ab6aa9004f6cf599ae7698f551567d6.scn"]
+source_file="res://assets/Assets/gltf/skull_candle.gltf"
+dest_files=["res://.godot/imported/skull_candle.gltf-6113f80ff239a39f18c20ee7e57d64f2.scn"]
 
 [params]
 

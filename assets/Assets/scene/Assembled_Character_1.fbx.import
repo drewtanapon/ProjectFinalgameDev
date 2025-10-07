@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://db4eqjacfjeat"
-path="res://.godot/imported/Assembled_Character_1.fbx-62c5061c3944569768a8b4b89c2e37f4.scn"
+path="res://.godot/imported/Assembled_Character_1.fbx-8c2473d7e393b7212bfa50836f503d25.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/scene/Assembled_Character_1.fbx"
-dest_files=["res://.godot/imported/Assembled_Character_1.fbx-62c5061c3944569768a8b4b89c2e37f4.scn"]
+source_file="res://assets/Assets/scene/Assembled_Character_1.fbx"
+dest_files=["res://.godot/imported/Assembled_Character_1.fbx-8c2473d7e393b7212bfa50836f503d25.scn"]
 
 [params]
 

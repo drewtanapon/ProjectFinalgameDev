@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c3scx5x62e71d"
-path="res://.godot/imported/tree_pine_orange_small.gltf-363965167ec21a7d6ea95f73f8c750e3.scn"
+path="res://.godot/imported/tree_pine_orange_small.gltf-1ea669e997cd42967a9ae27c9fe9fc33.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/gltf/tree_pine_orange_small.gltf"
-dest_files=["res://.godot/imported/tree_pine_orange_small.gltf-363965167ec21a7d6ea95f73f8c750e3.scn"]
+source_file="res://assets/Assets/gltf/tree_pine_orange_small.gltf"
+dest_files=["res://.godot/imported/tree_pine_orange_small.gltf-1ea669e997cd42967a9ae27c9fe9fc33.scn"]
 
 [params]
 

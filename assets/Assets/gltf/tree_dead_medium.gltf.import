@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://lg566r0wjqex"
-path="res://.godot/imported/tree_dead_medium.gltf-497f7f2a143b7ff39ade47c2f81906ff.scn"
+path="res://.godot/imported/tree_dead_medium.gltf-477b28304744c8956c85196ad147f274.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/gltf/tree_dead_medium.gltf"
-dest_files=["res://.godot/imported/tree_dead_medium.gltf-497f7f2a143b7ff39ade47c2f81906ff.scn"]
+source_file="res://assets/Assets/gltf/tree_dead_medium.gltf"
+dest_files=["res://.godot/imported/tree_dead_medium.gltf-477b28304744c8956c85196ad147f274.scn"]
 
 [params]
 

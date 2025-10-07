@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://1amvndjtql8g"
-path="res://.godot/imported/Ghost_1.fbx-17a150909cf20d0fe7616129c082cd42.scn"
+path="res://.godot/imported/Ghost_1.fbx-68928fc42f15f8c6b7b99c6de05b8826.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/scene/Ghost_1.fbx"
-dest_files=["res://.godot/imported/Ghost_1.fbx-17a150909cf20d0fe7616129c082cd42.scn"]
+source_file="res://assets/Assets/scene/Ghost_1.fbx"
+dest_files=["res://.godot/imported/Ghost_1.fbx-68928fc42f15f8c6b7b99c6de05b8826.scn"]
 
 [params]
 

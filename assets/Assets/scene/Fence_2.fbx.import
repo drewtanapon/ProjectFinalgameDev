@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dhcarrgsgturw"
-path="res://.godot/imported/Fence_2.fbx-262ea802f993b4f2650b67e108db9222.scn"
+path="res://.godot/imported/Fence_2.fbx-f04d17de73020a79e99529acefb43307.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/scene/Fence_2.fbx"
-dest_files=["res://.godot/imported/Fence_2.fbx-262ea802f993b4f2650b67e108db9222.scn"]
+source_file="res://assets/Assets/scene/Fence_2.fbx"
+dest_files=["res://.godot/imported/Fence_2.fbx-f04d17de73020a79e99529acefb43307.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://112jr6b2kxpk"
-path="res://.godot/imported/pumpkin_yellow_jackolantern.gltf-00360c2a080badb814754ad6fcd1ca68.scn"
+path="res://.godot/imported/pumpkin_yellow_jackolantern.gltf-62443a55013d1f72c51231efc5b84810.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/gltf/pumpkin_yellow_jackolantern.gltf"
-dest_files=["res://.godot/imported/pumpkin_yellow_jackolantern.gltf-00360c2a080badb814754ad6fcd1ca68.scn"]
+source_file="res://assets/Assets/gltf/pumpkin_yellow_jackolantern.gltf"
+dest_files=["res://.godot/imported/pumpkin_yellow_jackolantern.gltf-62443a55013d1f72c51231efc5b84810.scn"]
 
 [params]
 

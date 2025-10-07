@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d03ucfauaugxx"
-path="res://.godot/imported/pumpkin_orange_small.gltf-0a5b5ce0b0de2f1d41f9a4a6111057b2.scn"
+path="res://.godot/imported/pumpkin_orange_small.gltf-35c4a03b94c8f469ea3398c805e147bd.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/gltf/pumpkin_orange_small.gltf"
-dest_files=["res://.godot/imported/pumpkin_orange_small.gltf-0a5b5ce0b0de2f1d41f9a4a6111057b2.scn"]
+source_file="res://assets/Assets/gltf/pumpkin_orange_small.gltf"
+dest_files=["res://.godot/imported/pumpkin_orange_small.gltf-35c4a03b94c8f469ea3398c805e147bd.scn"]
 
 [params]
 

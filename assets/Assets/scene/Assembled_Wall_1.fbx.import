@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://r1sfpobn6bo6"
-path="res://.godot/imported/Assembled_Wall_1.fbx-d10fcb66b62b5892ad4e7101ccb764ad.scn"
+path="res://.godot/imported/Assembled_Wall_1.fbx-d3f4d017d847376272e2834508dca97f.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/scene/Assembled_Wall_1.fbx"
-dest_files=["res://.godot/imported/Assembled_Wall_1.fbx-d10fcb66b62b5892ad4e7101ccb764ad.scn"]
+source_file="res://assets/Assets/scene/Assembled_Wall_1.fbx"
+dest_files=["res://.godot/imported/Assembled_Wall_1.fbx-d3f4d017d847376272e2834508dca97f.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bqwnc7udnu8q3"
-path="res://.godot/imported/Candy_1.fbx-2b810e65acea44783c017e182cb26505.scn"
+path="res://.godot/imported/Candy_1.fbx-1bf57a34b7faef06940fa1be9639900f.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/scene/Candy_1.fbx"
-dest_files=["res://.godot/imported/Candy_1.fbx-2b810e65acea44783c017e182cb26505.scn"]
+source_file="res://assets/Assets/scene/Candy_1.fbx"
+dest_files=["res://.godot/imported/Candy_1.fbx-1bf57a34b7faef06940fa1be9639900f.scn"]
 
 [params]
 

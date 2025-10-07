@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dpniuudx8v7g7"
-path="res://.godot/imported/pumpkin_yellow.gltf-538ff735b9073eb7a30338eafd6b2d80.scn"
+path="res://.godot/imported/pumpkin_yellow.gltf-6d08accb4fe79fbd37b5ab2e7330b78f.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/gltf/pumpkin_yellow.gltf"
-dest_files=["res://.godot/imported/pumpkin_yellow.gltf-538ff735b9073eb7a30338eafd6b2d80.scn"]
+source_file="res://assets/Assets/gltf/pumpkin_yellow.gltf"
+dest_files=["res://.godot/imported/pumpkin_yellow.gltf-6d08accb4fe79fbd37b5ab2e7330b78f.scn"]
 
 [params]
 

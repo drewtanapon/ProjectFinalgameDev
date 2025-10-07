@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bcor1gdak210e"
-path="res://.godot/imported/ribcage.gltf-6c176f2b8bc68cd70b89891fa0f64c18.scn"
+path="res://.godot/imported/ribcage.gltf-f2c1231d29b324899acf0f831c8dbf4f.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/gltf/ribcage.gltf"
-dest_files=["res://.godot/imported/ribcage.gltf-6c176f2b8bc68cd70b89891fa0f64c18.scn"]
+source_file="res://assets/Assets/gltf/ribcage.gltf"
+dest_files=["res://.godot/imported/ribcage.gltf-f2c1231d29b324899acf0f831c8dbf4f.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dt1fuqt2sfffq"
-path="res://.godot/imported/Cauldron_3.fbx-53a3b4c795f18fb8db80220ac51b97fb.scn"
+path="res://.godot/imported/Cauldron_3.fbx-81273f2525abe50f25c3347a31ab70b3.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/scene/Cauldron_3.fbx"
-dest_files=["res://.godot/imported/Cauldron_3.fbx-53a3b4c795f18fb8db80220ac51b97fb.scn"]
+source_file="res://assets/Assets/scene/Cauldron_3.fbx"
+dest_files=["res://.godot/imported/Cauldron_3.fbx-81273f2525abe50f25c3347a31ab70b3.scn"]
 
 [params]
 

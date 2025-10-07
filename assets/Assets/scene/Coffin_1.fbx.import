@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://baqf8yvh0yni7"
-path="res://.godot/imported/Coffin_1.fbx-4edc0faf4ca7b949077dbf79bf571e95.scn"
+path="res://.godot/imported/Coffin_1.fbx-2638d3303764e41b11a51a2e30569cd1.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/scene/Coffin_1.fbx"
-dest_files=["res://.godot/imported/Coffin_1.fbx-4edc0faf4ca7b949077dbf79bf571e95.scn"]
+source_file="res://assets/Assets/scene/Coffin_1.fbx"
+dest_files=["res://.godot/imported/Coffin_1.fbx-2638d3303764e41b11a51a2e30569cd1.scn"]
 
 [params]
 

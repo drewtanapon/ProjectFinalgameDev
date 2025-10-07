@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://nyn4cvo5xkec"
-path="res://.godot/imported/shrine_candles.gltf-066d51fa67552a8e64fc5c3558b5fa99.scn"
+path="res://.godot/imported/shrine_candles.gltf-7fdb204cbc9bd6a2e8837384c7632760.scn"
 
 [deps]
 
-source_file="res://assets/Assetsฉากต่างๆ/gltf/shrine_candles.gltf"
-dest_files=["res://.godot/imported/shrine_candles.gltf-066d51fa67552a8e64fc5c3558b5fa99.scn"]
+source_file="res://assets/Assets/gltf/shrine_candles.gltf"
+dest_files=["res://.godot/imported/shrine_candles.gltf-7fdb204cbc9bd6a2e8837384c7632760.scn"]
 
 [params]
 
