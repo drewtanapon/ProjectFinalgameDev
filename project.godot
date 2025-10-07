@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Your First 3D Game With Godot 4 (GDQuest)"
 run/main_scene="uid://ccuhj745gnl8b"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.png"
 
 [audio]
