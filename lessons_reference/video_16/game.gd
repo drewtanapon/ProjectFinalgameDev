@@ -4,7 +4,7 @@ extends Node3D
 @onready var labelC: Label = $Player/Camera3D/LabelC
 
 # ===== ตั้งค่าจำนวนที่ต้องฆ่า =====
-@export var required_kills: int = 1
+@export var required_kills: int = 25
 var remaining_kills: int
 var level_cleared: bool = false
 

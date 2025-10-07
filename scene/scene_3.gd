@@ -1,7 +1,7 @@
 extends Node3D
 
 # ===== เป้าหมายต่อด่าน =====
-@export var required_kills: int = 1
+@export var required_kills: int = 100
 var remaining_kills: int
 var level_cleared: bool = false
 
@@ -17,9 +17,7 @@ var level_cleared: bool = false
 @onready var congratulations: CanvasItem = $Player/congratulations
 @onready var enter: CanvasItem = $Player/enter
 
-@onready var white_bg := $Player/white_bg
-@onready var congratulations := $Player/congratulations
-@onready var enter := $Player/enter
+
 @onready var hpbar := $Player/Camera3D/HealthBar
 var _scene_changed: bool = false
 
@@ -121,8 +119,8 @@ func _on_mob_spawner_3d_mob_spawned(mob: Node) -> void:
 	# ควันตอนเกิด (ถ้าต้องการ)
 	do_poof(mob.global_position)
 
-func show_congratulations() -> 
-	void:hpbar.visible = false
+func show_congratulations():
+	hpbar.visible = false
 	white_bg.visible = true
 	congratulations.visible = true
 	enter.visible = true
@@ -159,6 +157,10 @@ func do_poof(mob_position: Vector3) -> void:
 func wait_for_space():
 	while true:
 		await get_tree().create_timer(0.01).timeout
-		if Input.is_action_just_pressed("ui_select"): # ปุ่ม spacebar โดยค่าเริ่มต้นของ Godot
-			get_tree().change_scene_to_file("res://lessons_reference/video_16/game.tscn")
+		if Input.is_action_just_pressed("ui_select"):
+			if _scene_changed: # ป้องกันเปลี่ยนซ้ำ
+				break
+			_scene_changed = true
+			if is_inside_tree(): # ✅ ตรวจว่าตัว node ยังอยู่ใน scene ปลอดภัย
+				get_tree().change_scene_to_file("res://lessons_reference/video_16/game.tscn")
 			break
