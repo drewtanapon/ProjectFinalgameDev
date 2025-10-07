@@ -25,7 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://cqn2v575d86g5" path="res://assets/Assetsฉากต่างๆ/gltf/path_C.gltf" id="20_hks8s"]
 [ext_resource type="PackedScene" uid="uid://cndb6rqybipen" path="res://assets/Assetsฉากต่างๆ/gltf/tree_dead_large_decorated.gltf" id="21_bxgp1"]
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="22_n2bin"]
-[ext_resource type="PackedScene" path="res://first_aid_kit.tscn" id="23_u14kr"]
+[ext_resource type="PackedScene" uid="uid://clyj0kwfth08e" path="res://first_aid_kit.tscn" id="23_u14kr"]
 [ext_resource type="AudioStream" uid="uid://d2a3k1wu0xpuv" path="res://Sound/6 - Impish Dance (no loop).wav" id="26_8k2pk"]
 [ext_resource type="PackedScene" uid="uid://b5xgdttaspmk" path="res://lessons_reference/video_16/mob/mob1.tscn" id="26_gipnd"]
 [ext_resource type="PackedScene" uid="uid://ex12fioxf333" path="res://lessons_reference/video_16/mob/mob4.tscn" id="26_st38c"]

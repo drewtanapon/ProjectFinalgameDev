@@ -1,7 +1,7 @@
 extends Node3D
 
 # ===== เป้าหมายต่อด่าน =====
-@export var required_kills: int = 1
+@export var required_kills: int = 50
 var remaining_kills: int
 var level_cleared: bool = false
 
